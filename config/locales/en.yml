@@ -21,3 +21,12 @@
 
 en:
   hello: "Hello world"
+    
+  static_pages:
+    todo: "Coming soon"
+    about:
+      about: "About"
+    help:
+      help: "Help"
+    home:
+      home: "Home"

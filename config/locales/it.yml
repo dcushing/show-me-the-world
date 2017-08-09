@@ -1,2 +1,11 @@
 it:
   hello: "Ciao mondo"
+  
+  static_pages:
+    todo: "Tra poco in vendita"
+    about:
+      about: "Parlare di"
+    help:
+      help: "Aiuta"
+    home:
+      home: "Homepage"
