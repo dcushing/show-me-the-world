@@ -1,10 +1,12 @@
-<% provide :title, t('.home') %>
+<% provide :title, t('.where-next') %>
 
 <div class="row text-center" id="landing">
 	<div class="col-xs-12">
-		<h1>City, Country</h1>
+		<h1><%= @place.city %>, <%= @place.country %></h1>
 	</div>
 </div>
+
+<h4>Lat: <%= @place.lat %>, lon: <%= @place.lng %>, pop: <%= @place.pop %></h4>
 
 <div class="row center" id="pics">
 	<div class="col-xs-4">
@@ -20,14 +22,12 @@
 
 <div class="row" id="buttons">
 	<div class="col-md-6 text-center">
-		<button>Tell me more!</button>
+		<%= link_to "Tell me more", "#", class: "btn btn-lg" %>
 	</div>
 	<div class="col-md-6 text-center">
-		<button>Nah, show me something else</button>
+		<%= link_to "Nah, show me something else", "#", class: "btn btn-lg" %>
 	</div>
 </div>
 
-
-
-<%= render 'static_pages/trip' %>
+<div id="more-place-info"></div>
 

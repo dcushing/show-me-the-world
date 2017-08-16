@@ -6,11 +6,6 @@ class StaticPagesControllerTest < ActionController::TestCase
     @base_title = "Show Me The World"
   end
   
-  test "should get home" do
-    get :home
-    assert_response :success
-  end
-  
   test "should get help" do
     get :help
     assert_response :success

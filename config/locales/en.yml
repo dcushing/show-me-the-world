@@ -32,3 +32,7 @@ en:
       home: "Home"
     trip:
       trip: "Your Trip"
+    
+  places:
+    show:
+      where-next: "Where Next?"
