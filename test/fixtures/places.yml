@@ -1,0 +1,23 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  city: MyString
+  city_ascii: MyString
+  lat: 1
+  lng: 1
+  pop: 1
+  country: MyString
+  iso2: MyString
+  iso3: MyString
+  province: MyString
+
+two:
+  city: MyString
+  city_ascii: MyString
+  lat: 1
+  lng: 1
+  pop: 1
+  country: MyString
+  iso2: MyString
+  iso3: MyString
+  province: MyString

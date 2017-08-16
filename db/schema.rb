@@ -10,6 +10,20 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 0) do
+ActiveRecord::Schema.define(version: 20170816071120) do
+
+  create_table "places", force: :cascade do |t|
+    t.string "city"
+    t.string "city_ascii"
+    t.integer "lat"
+    t.integer "lng"
+    t.integer "pop"
+    t.string "country"
+    t.string "iso2"
+    t.string "iso3"
+    t.string "province"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
 
 end
