@@ -9,3 +9,5 @@ it:
       help: "Aiuta"
     home:
       home: "Homepage"
+    trip:
+      trip: "Il Suo Viaggio"

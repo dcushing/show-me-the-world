@@ -30,3 +30,5 @@ en:
       help: "Help"
     home:
       home: "Home"
+    trip:
+      trip: "Your Trip"

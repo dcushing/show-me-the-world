@@ -1,4 +1,33 @@
 <% provide :title, t('.home') %>
-<h1><%= t('.home') %> Show Me The World</h1>
 
-<p><%= t(:todo, scope: :static_pages) %></p>
+<div class="row text-center" id="landing">
+	<div class="col-xs-12">
+		<h1>City, Country</h1>
+	</div>
+</div>
+
+<div class="row center" id="pics">
+	<div class="col-xs-4">
+		<img class="img-responsive" src="https://www.massinsight.org/wp-content/uploads/2016/05/placeholder-4-500x300.png" />
+	</div>
+	<div class="col-xs-4">		
+		<img class="img-responsive" src="https://www.massinsight.org/wp-content/uploads/2016/05/placeholder-4-500x300.png" />
+	</div>
+	<div class="col-xs-4">
+		<img class="img-responsive" src="https://www.massinsight.org/wp-content/uploads/2016/05/placeholder-4-500x300.png" />
+	</div>
+</div>
+
+<div class="row" id="buttons">
+	<div class="col-md-6 text-center">
+		<button>Tell me more!</button>
+	</div>
+	<div class="col-md-6 text-center">
+		<button>Nah, show me something else</button>
+	</div>
+</div>
+
+
+
+<%= render 'static_pages/trip' %>
+
