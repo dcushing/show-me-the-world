@@ -9,25 +9,26 @@
 <h4>Lat: <%= @place.lat %>, lon: <%= @place.lng %>, pop: <%= @place.pop %></h4>
 
 <div class="row center" id="pics">
-	<div class="col-xs-4">
+	<div class="col-xs-4 text-center">
 		<img class="img-responsive" src="https://www.massinsight.org/wp-content/uploads/2016/05/placeholder-4-500x300.png" />
+		<p>Image credit {USER} on Flickr</p>
 	</div>
-	<div class="col-xs-4">		
+	<div class="col-xs-4 text-center">		
 		<img class="img-responsive" src="https://www.massinsight.org/wp-content/uploads/2016/05/placeholder-4-500x300.png" />
+		<p>Image credit {USER} on Flickr</p>
 	</div>
-	<div class="col-xs-4">
+	<div class="col-xs-4 text-center">
 		<img class="img-responsive" src="https://www.massinsight.org/wp-content/uploads/2016/05/placeholder-4-500x300.png" />
+		<p>Image credit {USER} on Flickr</p>
 	</div>
 </div>
 
 <div class="row" id="buttons">
 	<div class="col-md-6 text-center">
-		<%= link_to "Tell me more", "#", class: "btn btn-lg" %>
+		<%= link_to "Tell me more", "#", class: 'btn btn-lg' %>
 	</div>
 	<div class="col-md-6 text-center">
-		<%= link_to "Nah, show me something else", "#", class: "btn btn-lg" %>
+		<%= link_to "Nah, show me something else", "#", class: 'btn btn-lg' %>
 	</div>
 </div>
-
-<div id="more-place-info"></div>
 

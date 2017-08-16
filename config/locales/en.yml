@@ -34,5 +34,5 @@ en:
       trip: "Your Trip"
     
   places:
-    show:
+    index:
       where-next: "Where Next?"
