@@ -12,10 +12,12 @@ namespace :import do
   task places: :environment do
     filename = File.join Rails.root, "simplemaps-worldcities-basic.csv"
     CSV.foreach(filename, headers: true) do |row|
-      place = Place.create(city: row["city"], city_ascii: row["city_ascii"], lat: row["lat"], lng: row["lng"], pop: row["pop"], country: row["country"], iso2: row["iso2"], iso3: row["iso3"], province: row["province"])
-      
-      puts "#{city}, #{iso2} - #{place.errors.full_messages}" if place.errors.any? # show me error messages if there's a problem
-      counter +=1 if place.persisted?
+      if row["pop"].to_i >= 100000
+        place = Place.create(city: row["city"], lat: row["lat"], lng: row["lng"], pop: row["pop"], country: row["country"], iso2: row["iso2"], iso3: row["iso3"], province: row["province"])
+        
+        puts "#{city}, #{iso2} - #{place.errors.full_messages}" if place.errors.any? # show me error messages if there's a problem
+        counter +=1 if place.persisted?
+      end
     end
     
     puts "#{counter} places imported"
