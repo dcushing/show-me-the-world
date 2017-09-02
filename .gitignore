@@ -22,3 +22,6 @@ config/initializers/secret_token.rb
 
 # Ignore Byebug command history file.
 .byebug_history
+
+# Ignore my personal notes, because GitHub doesn’t need that
+notes.txt

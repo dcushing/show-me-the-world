@@ -8,14 +8,36 @@ class GetPhotos
   FlickRaw.shared_secret=ENV['FLICKR_SECRET']
   
   def initialize(place)
-    @place = place
-    list = flickr.photos.search :tags => 'travel, saigon, landscape', :tag_mode => 'all', :content_type => '1', :safe_search => '1'
-    list_len = list.length
-    index = Random.new.rand(0..list_len)
-    @photo = list[index]
-    @id = @photo.id
-    @secret = @photo.secret
-    @info = flickr.photos.getInfo :photo_id => @id, :secret => @secret
+    
+    # get the Flickr ID for the city
+    find_place = flickr.places.find :query => place.city
+    
+    # if the city doesn't exist, then check the country
+    if find_place != []
+      @place = find_place[0]["place_id"]
+    else
+      find_place = flickr.places.find :query => place.country
+      @place = find_place[0]["place_id"]
+    end
+    
+    # look for photos of that place and put them in a list
+    list = flickr.photos.search :place_id => @place, :tags => "travel", :safe_search => '1' 
+    
+    # make sure the list actually contains something
+    @list_len = list.length
+    if @list_len == 0
+      # put a placeholder image in there for now
+      @photo = "https://www.massinsight.org/wp-content/uploads/2016/05/placeholder-4-500x300.png" 
+    elsif @list_len == 1
+        @photo = list[0]     
+    else
+      index = Random.new.rand(0..@list_len)
+      @photo = list[index]
+      @id = @photo.id
+      @secret = @photo.secret
+      @info = flickr.photos.getInfo :photo_id => @id, :secret => @secret
+    end
+
   end
   
   def photos_list
@@ -24,16 +46,28 @@ class GetPhotos
   end
   
   def uploaded_by
-    return @info["owner"]["username"]
+    if @list_len == 0
+      return "Sorry, looks like Flickr doesn't have a photo for this location!"
+    else
+      return "Photo by #{@info["owner"]["username"]} on Flickr"
+    end
   end
   
   def profile_link
-    url = FlickRaw.url_profile(@info)
-    return url
+    if @list_len == 0
+      return "#"
+    else
+      url = FlickRaw.url_profile(@info)
+      return url
+    end
   end
   
   def photo_url
-    FlickRaw.url_b(@info)
+    if @list_len == 0
+      return @photo
+    else
+      FlickRaw.url_b(@info)
+    end
   end
-
+  
 end
