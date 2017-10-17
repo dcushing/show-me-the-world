@@ -1,4 +1,5 @@
 require 'test_helper'
+require 'vcr'
 
 class PlacesControllerTest < ActionDispatch::IntegrationTest
   def setup
@@ -6,14 +7,11 @@ class PlacesControllerTest < ActionDispatch::IntegrationTest
   end
   
   test "should get index" do
-    get :index
-    assert_response :success
-    assert_select "title", "Index - #{@base_title}"
+    VCR.use_cassette("get index") do
+      get places_path
+      assert_response :success
+      assert_select "title", "Where Next? - #{@base_title}"
+    end
   end
   
-  test "should get show" do
-    get :show
-    assert_response :success
-    assert_select "title", "Where Next? - #{@base_title}"
-  end
 end
