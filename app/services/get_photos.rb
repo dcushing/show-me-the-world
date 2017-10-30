@@ -7,21 +7,10 @@ class GetPhotos
   FlickRaw.api_key=ENV['FLICKR_KEY']
   FlickRaw.shared_secret=ENV['FLICKR_SECRET']
   
-  def initialize(place)
-    
-    # get the Flickr ID for the city
-    find_place = flickr.places.find :query => place.city
-    
-    # if the city doesn't exist, then check the country
-    if find_place != []
-      @place = find_place[0]["place_id"]
-    else
-      find_place = flickr.places.find :query => place.country
-      @place = find_place[0]["place_id"]
-    end
+  def initialize(woeid)
     
     # look for photos of that place and put them in a list
-    list = flickr.photos.search :place_id => @place, :tags => "travel", :safe_search => '1' 
+    list = flickr.photos.search :woe_id => @woeid, :tags => "travel", :safe_search => '1' 
     
     # make sure the list actually contains something
     @list_len = list.length
@@ -38,6 +27,19 @@ class GetPhotos
       @info = flickr.photos.getInfo :photo_id => @id, :secret => @secret
     end
 
+  end
+  
+  # get woeid for the place if it's not in the database already
+  def getWoeid(place)
+    response = flickr.places.findByLatLon :lat => place.lat, :lon => place.lng
+    woeid = response["place"][0]["woeid"]
+    return woeid
+  end
+  
+  def woeid
+    #return @response["place"][0]["woeid"] 2733
+    #return @woeid 123456
+    return @photo["photo"]
   end
   
   def photos_list

@@ -10,8 +10,11 @@ class ApplicationController < ActionController::Base
     I18n.locale = I18n.available_locales.include?(locale) ? locale : I18n.default_locale
   end
   
-  def hello
-    
+  def set_place
+     num_places = Place.count
+     random_id = Random.new.rand(1..num_places)
+     @place = Place.find(params[:random_id])
+     return @place
   end
   
 end

@@ -1,11 +1,24 @@
 # Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
 
 boston:
-  city: "Boston"
+  id: 1
+  city: Boston
   lat: "42.32996014"
   lng: "-71.07001367"
   pop: 2528070
-  country: "United States of America"
-  iso2: "US"
-  iso3: "USA"
-  province: "Massachusetts"
+  country: United States of America
+  iso2: US
+  iso3: USA
+  province: Massachusetts
+  woeid: ""
+
+mekambo:
+  id: 2
+  city: Mekambo
+  lat: "1.017081318"
+  lng: "13.93329911"
+  pop: 3170
+  country: Gabon
+  iso2: GA
+  iso3: GAB
+  province: Ogooué-Ivindo
