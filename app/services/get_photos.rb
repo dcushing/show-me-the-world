@@ -10,7 +10,7 @@ class GetPhotos
   def initialize(woeid)
     
     # look for photos of that place and put them in a list
-    list = flickr.photos.search :woe_id => @woeid, :tags => "travel", :safe_search => '1' 
+    list = flickr.photos.search :woe_id => woeid, :tags => "travel", :safe_search => '1' 
     
     # make sure the list actually contains something
     @list_len = list.length
@@ -34,12 +34,6 @@ class GetPhotos
     response = flickr.places.findByLatLon :lat => place.lat, :lon => place.lng
     woeid = response["place"][0]["woeid"]
     return woeid
-  end
-  
-  def woeid
-    #return @response["place"][0]["woeid"] 2733
-    #return @woeid 123456
-    return @photo["photo"]
   end
   
   def photos_list

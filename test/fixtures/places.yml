@@ -1,7 +1,6 @@
 # Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
 
 boston:
-  id: 1
   city: Boston
   lat: "42.32996014"
   lng: "-71.07001367"
@@ -10,10 +9,10 @@ boston:
   iso2: US
   iso3: USA
   province: Massachusetts
-  woeid: ""
+  woeid: "55986789"
+  place_id: 1
 
 mekambo:
-  id: 2
   city: Mekambo
   lat: "1.017081318"
   lng: "13.93329911"
@@ -22,3 +21,4 @@ mekambo:
   iso2: GA
   iso3: GAB
   province: Ogooué-Ivindo
+  place_id: 2
