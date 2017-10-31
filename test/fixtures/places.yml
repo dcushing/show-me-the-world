@@ -21,4 +21,17 @@ mekambo:
   iso2: GA
   iso3: GAB
   province: Ogooué-Ivindo
+  woeid: ""
   place_id: 2
+
+sarnia:
+  city: Sarnia
+  lat: "42.96663963"
+  lng: "-82.3999681"
+  pop: 113585
+  country: Canada
+  iso2: CA
+  iso3: CAN
+  province: Ontario
+  woeid: ""
+  place_id: 3

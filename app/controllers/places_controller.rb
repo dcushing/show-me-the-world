@@ -1,19 +1,14 @@
 class PlacesController < ApplicationController
-  before_action :set_place
+  #before_action :set_place
   
   def index
     # set place
-    #@place = @@place #Place.order("random()").first
-    #@photo1 = GetPhotos.new(@place)
-    #@photo2 = GetPhotos.new(@place)
-    #@photo3 = GetPhotos.new(@place)
-    #@@place# = Place.order("random()").first
-    @place = @@place
+    @place = set_place
   end
   
   def show
     # find a place
-    @place = @@place
+    @place = Place.find(params[:id])
     
     # look for the woeid in the DB and if it's not there, search for it using the Flickr API
     #if @place.woeid
@@ -23,7 +18,7 @@ class PlacesController < ApplicationController
       #@place.woeid = woeid
     #end
     
-    @photo1 = GetPhotos.new("55986789")
+    #@photo1 = GetPhotos.new("55986789")
   end
   
   def info
@@ -32,8 +27,9 @@ class PlacesController < ApplicationController
   private
   
   def set_place
-    @@place = Place.take
-    return @@place
+    place = Place.take
+    session[:current_place] = place.id
+    return place
   end
   
   def place_params

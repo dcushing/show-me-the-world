@@ -1,6 +1,5 @@
 Rails.application.routes.draw do
-  
-  
+
   scope "/:locale" do
     resources :static_pages, only: [:show]
   end

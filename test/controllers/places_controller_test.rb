@@ -20,7 +20,16 @@ class PlacesControllerTest < ActionDispatch::IntegrationTest
       get place_path(@boston)
       assert_response :success
       assert_select "title", "Boston - #{@base_title}"
-      assert_select "h1", "Boston, Massachusetts, USA"
+      assert_select "h1", "Boston, Massachusetts, United States of America"
+    end
+  end
+  
+  test "should get new id when index is called again" do
+    VCR.use_cassette("get index twice") do
+      get places_path
+      assert_response :success
+      get places_path
+      assert_response :success
     end
   end
   

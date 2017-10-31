@@ -4,7 +4,7 @@ class PlacesTest < ApplicationSystemTestCase
   test "visit the index" do
     VCR.use_cassette("system test visit index") do
       visit places_url
-      assert_selector "h1", "Where to next?"
+      #click_on "Where ?"
     end
   end
 end
