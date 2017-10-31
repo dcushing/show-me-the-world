@@ -27,9 +27,11 @@ class PlacesController < ApplicationController
   private
   
   def set_place
-    place = Place.take
-    session[:current_place] = place.id
-    return place
+    places_size = Place.count
+    place_index = Random.new.rand(0..places_size)
+    current_place = Place.find(place_index)
+    session[:current_place] = current_place.id
+    return current_place
   end
   
   def place_params

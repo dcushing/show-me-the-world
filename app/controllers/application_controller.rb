@@ -13,8 +13,8 @@ class ApplicationController < ActionController::Base
   def set_place
      #num_places = Place.count
      #random_id = Random.new.rand(1..num_places)
-     @place = Place.take #find_by(place_id:random_id)
-     return @place
+     #@place = Place.take #find_by(place_id:random_id)
+     #return @place
   end
   
 end

@@ -3,7 +3,7 @@
 <div class="row text-center" id="landing">
 	<div class="col-xs-12">
 		<h3>You should go to</h3>
-		<h1><%= @place.city %>, <% if @place.iso2 == 'US' || 'CA' || 'AU' || 'CN' %><%= @place.province %>, <% end %><%= @place.country %></h1>
+		<h1><%= @place.city %>, <% if @place.province != "" %><%= @place.province %>, <% end %><%= @place.country %></h1>
 		<h4><%= @place.id %></h4>
 	</div>
 </div>
@@ -19,10 +19,10 @@
 
 <div class="row" id="buttons">
 	<div class="col-md-6 text-center">
-		<%= link_to "Tell me more", "#", class: 'btn btn-lg' %>
+		<%= link_to "Tell me more", info_path, class: 'btn btn-lg' %>
 	</div>
 	<div class="col-md-6 text-center">
-		<%= link_to "Nah, show me something else", "#", class: 'btn btn-lg' %>
+		<%= link_to "Nah, let's try again", places_path, class: 'btn btn-lg' %>
 	</div>
 </div>
 

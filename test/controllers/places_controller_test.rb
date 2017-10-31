@@ -5,13 +5,14 @@ class PlacesControllerTest < ActionDispatch::IntegrationTest
   def setup
     @base_title = "Show Me The World"
     @boston = places(:boston)
+    @mekambo = places(:mekambo)
   end
   
   test "should get index" do
     VCR.use_cassette("get index") do
       get places_path
       assert_response :success
-      #assert_select "title", "Where Next? - #{@base_title}"
+      assert_select "title", "Where To? - #{@base_title}"
     end
   end
   
@@ -24,12 +25,12 @@ class PlacesControllerTest < ActionDispatch::IntegrationTest
     end
   end
   
-  test "should get new id when index is called again" do
-    VCR.use_cassette("get index twice") do
-      get places_path
+  test "should get page for Mekambo" do
+    VCR.use_cassette("get Mekambo") do
+      get place_path(@mekambo)
       assert_response :success
-      get places_path
-      assert_response :success
+      assert_select "title", "Mekambo - #{@base_title}"
+      assert_select "h1", "Mekambo, Ogooué-Ivindo, Gabon"
     end
   end
   
