@@ -1,6 +1,7 @@
 # Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
 
 boston:
+  id: 1
   city: Boston
   lat: "42.32996014"
   lng: "-71.07001367"
@@ -13,6 +14,7 @@ boston:
   place_id: 1
 
 mekambo:
+  id: 2
   city: Mekambo
   lat: "1.017081318"
   lng: "13.93329911"
@@ -25,6 +27,7 @@ mekambo:
   place_id: 2
 
 sarnia:
+  id: 3
   city: Sarnia
   lat: "42.96663963"
   lng: "-82.3999681"

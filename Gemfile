@@ -31,5 +31,6 @@ group :test do
   gem 'guard-minitest',           '2.4.4'
   gem 'webmock'
   gem 'vcr'
+  gem 'capybara'
 end
 

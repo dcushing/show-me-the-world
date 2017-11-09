@@ -6,7 +6,7 @@ class PlacesFlowTest < ActionDispatch::IntegrationTest
     VCR.use_cassette("from index to show") do
       get places_path
       assert :success
-      assert_select "a", "Where next?"
+      assert_select "a", "Where to?"
     end
   end
   

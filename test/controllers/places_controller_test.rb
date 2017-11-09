@@ -25,13 +25,4 @@ class PlacesControllerTest < ActionDispatch::IntegrationTest
     end
   end
   
-  test "should get page for Mekambo" do
-    VCR.use_cassette("get Mekambo") do
-      get place_path(@mekambo)
-      assert_response :success
-      assert_select "title", "Mekambo - #{@base_title}"
-      assert_select "h1", "Mekambo, Ogooué-Ivindo, Gabon"
-    end
-  end
-  
 end
