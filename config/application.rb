@@ -20,6 +20,9 @@ module ShowMeTheWorld
     config.i18n.load_path += Dir[Rails.root.join('my', 'locales', '*.{rb,yml}').to_s]
     config.i18n.available_locales = [:en, :it]
     #config.i18n.default_locale = :it
+    
+    # use the app's custom error pages when we get 4xx or 5xx HTTP errors
+    config.exceptions_app = self.routes
 
   end
 end

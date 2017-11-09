@@ -38,4 +38,7 @@ Rails.application.configure do
 
   # Raises error for missing translations
   # config.action_view.raise_on_missing_translations = true
+  
+  # For testing the custom error pages in dev (uncomment to test)
+  #config.consider_all_requests_local = false
 end
