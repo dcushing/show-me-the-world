@@ -6,9 +6,11 @@ class PlacesController < ApplicationController
   end
   
   def show
-    # find a place
+    # find the place set in index
     @place = Place.find(params[:id])    
     @photo1 = GetPhotos.new(@place)
+    @photo2 = GetPhotos.new(@place)
+    @photo3 = GetPhotos.new(@place)
   end
   
   def info
@@ -16,8 +18,9 @@ class PlacesController < ApplicationController
   
   private
   
+  # so that we can set a session so that the app remembers what location we're talking about even when we move from index to show
   def set_place
-    places_size = Place.count
+    places_size = Place.count - 1
     place_index = Random.new.rand(0..places_size)
     current_place = Place.find(place_index)
     session[:current_place] = current_place.id

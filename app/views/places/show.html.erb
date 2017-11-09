@@ -11,9 +11,17 @@
 
 
 <div class="row center" id="pics">
-	<div class="col-xs-4 text-center">
+	<div class="col-xs-4 text-center" id="photo1">
 		<%= image_tag(@photo1.photo_url, class: "img-responsive img-thumbnail") %>
 		<p><%= link_to "#{@photo1.uploaded_by}", @photo1.profile_link, target: "_blank" %></p>
+	</div>
+	<div class="col-xs-4 text-center" id="photo2">
+		<%= image_tag(@photo2.photo_url, class: "img-responsive img-thumbnail") %>
+		<p><%= link_to "#{@photo2.uploaded_by}", @photo2.profile_link, target: "_blank" %></p>
+	</div>
+	<div class="col-xs-4 text-center" id="photo3">
+		<%= image_tag(@photo3.photo_url, class: "img-responsive img-thumbnail") %>
+		<p><%= link_to "#{@photo3.uploaded_by}", @photo3.profile_link, target: "_blank" %></p>
 	</div>
 </div>
 
