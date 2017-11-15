@@ -6,11 +6,10 @@ boston:
   lat: "42.32996014"
   lng: "-71.07001367"
   pop: 2528070
-  country: United States of America
+  country_name: United States of America
   iso2: US
   iso3: USA
   province: Massachusetts
-  woeid: "55986789"
   place_id: 1
 
 mekambo:
@@ -19,11 +18,10 @@ mekambo:
   lat: "1.017081318"
   lng: "13.93329911"
   pop: 3170
-  country: Gabon
+  country_name: Gabon
   iso2: GA
   iso3: GAB
   province: Ogooué-Ivindo
-  woeid: ""
   place_id: 2
 
 sarnia:
@@ -32,9 +30,8 @@ sarnia:
   lat: "42.96663963"
   lng: "-82.3999681"
   pop: 113585
-  country: Canada
+  country_name: Canada
   iso2: CA
   iso3: CAN
   province: Ontario
-  woeid: ""
   place_id: 3

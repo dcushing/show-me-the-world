@@ -8,12 +8,18 @@ class PlacesController < ApplicationController
   def show
     # find the place set in index
     @place = Place.find(params[:id])    
+    
+    # find the country for the country info stuff
+    country_name = @place.country_name
+    #@country = Country.joins(name: :country_name).uniq
+    
+    # set photos
     @photo1 = GetPhotos.new(@place)
     @photo2 = GetPhotos.new(@place)
     @photo3 = GetPhotos.new(@place)
-  end
-  
-  def info
+    
+    # get the blurb and link from Wikipedia
+    @info = QueryWikipedia.new(@place)
   end
   
   private
@@ -25,10 +31,6 @@ class PlacesController < ApplicationController
     current_place = Place.find(place_index)
     session[:current_place] = current_place.id
     return current_place
-  end
-  
-  def place_params
-    params.require(:place).permit(:city, :country, :lat, :lng, :pop, :iso2, :iso3, :province)
   end
   
 end

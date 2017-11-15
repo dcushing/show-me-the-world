@@ -12,6 +12,7 @@ gem 'jbuilder',     '2.7.0'
 gem 'rails-i18n'
 gem 'flickraw'
 gem 'flickraw-cached'
+gem 'wikipedia-client'
 
 group :development, :test do
   gem 'sqlite3', '1.3.13'

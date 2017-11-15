@@ -3,8 +3,7 @@
 <div class="row text-center" id="landing">
 	<div class="col-xs-12">
 		<h3>You should go to</h3>
-		<h1><%= @place.city %>, <% if @place.province != "" %><%= @place.province %>, <% end %><%= @place.country %></h1>
-		<h4><%= @place.id %></h4>
+		<h1><%= @place.city %>, <% if @place.province != "" %><%= @place.province %>, <% end %><%= @place.country_name %></h1>
 	</div>
 </div>
 
@@ -26,11 +25,26 @@
 </div>
 
 <div class="row" id="buttons">
-	<div class="col-md-6 text-center">
-		<%= link_to "Tell me more", info_path, class: 'btn btn-lg' %>
-	</div>
-	<div class="col-md-6 text-center">
-		<%= link_to "Nah, let's try again", places_path, class: 'btn btn-lg' %>
+	<div class="col-md-12 text-center">
+		<%= link_to "Nah, let's try again", root_path, class: 'btn btn-lg' %>
 	</div>
 </div>
+
+<div class="row" id="info">
+	<div class="col-xs-6">
+		<div class="col-xs-12 info-box"><%= @info.get_summary %> - <%= link_to "More info about this place on Wikipedia", @info.get_url, target: "_blank"%>
+		</div>
+	</div>
+	<div class="col-xs-6">
+	<div class="col-xs-12 info-box">
+		<ul>
+			<li>Region: <%= @country.region %></li>
+			<li>Language: <%= @place.pop %></li>
+			<li>Population: <%= @place.pop %></li>
+			<li>Currency: <%= @place.pop %></li>
+		</ul>
+		Sound good? Check <%= link_to "Google Flights", "https://www.google.com/flights/", target: "_blank" %> for flights, or <%= link_to "TripAdvisor", "https://www.tripadvisor.com/", target: "_blank"%> and <%= link_to "Wikitravel", "https://wikitravel.org/en/Main_Page", target: "_blank" %> for things to do.
+	</div>
+</div>
+
 

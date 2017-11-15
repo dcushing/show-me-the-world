@@ -1,4 +1,3 @@
-#require 'flickraw'
 require 'flickraw-cached'
 
 # Service to access the Flickr API to get photos to display on places/show
@@ -12,7 +11,7 @@ class GetPhotos
     
     # look for photos of that place and put them in a list
     city = place.city
-    country = place.country
+    country = place.country_name
     list = flickr.photos.search :tags => "#{city} #{country}", :tag_mode => "ALL", :safe_search => '1' 
     
     # make sure the list actually contains something and if it doesn't, do some alternate things (determined in uploaded_by, profile_link, and photo_url)
@@ -34,7 +33,7 @@ class GetPhotos
   # get the username of the user who uploaded the photo so that we can give them credit
   def uploaded_by
     if @list_len == 0 # if the search doesn't find anything for that location
-      return "Sorry, looks like Flickr doesn't have a photo for this location!"
+      return "Sorry, looks like Flickr doesn't have a photo for this location, so have a panda instead"
     else
       return "Photo by #{@info["owner"]["username"]} on Flickr"
     end
@@ -53,7 +52,7 @@ class GetPhotos
   # get the URL for the photo so that we can put that on the page
   def photo_url
     if @list_len == 0 # put in a dummy photo if there are no photos of this location - I'll get some better placeholder photos later
-      return "https://www.massinsight.org/wp-content/uploads/2016/05/placeholder-4-500x300.png" 
+      return "panda.jpg" 
     else
       FlickRaw.url_b(@info)
     end

@@ -10,10 +10,10 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20171109052515) do
+ActiveRecord::Schema.define(version: 20171115083900) do
 
   create_table "countries", force: :cascade do |t|
-    t.string "name"
+    t.string "country_name"
     t.string "region"
     t.string "lang"
     t.string "currency"
@@ -26,7 +26,7 @@ ActiveRecord::Schema.define(version: 20171109052515) do
     t.string "lat"
     t.string "lng"
     t.integer "pop"
-    t.string "country"
+    t.string "country_name"
     t.string "iso2"
     t.string "iso3"
     t.string "province"
