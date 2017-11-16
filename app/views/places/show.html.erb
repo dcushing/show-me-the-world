@@ -32,7 +32,9 @@
 
 <div class="row" id="info">
 	<div class="col-xs-6">
-		<div class="col-xs-12 info-box"><%= @info.get_summary %> - <%= link_to "More info about this place on Wikipedia", @info.get_url, target: "_blank"%>
+		<div class="col-xs-12 info-box">
+			<p><%= @info.get_summary %></p>
+			<p>(<%= link_to "More info about this place on Wikipedia", @info.get_url, target: "_blank"%>)</p>
 		</div>
 	</div>
 	<div class="col-xs-6">
