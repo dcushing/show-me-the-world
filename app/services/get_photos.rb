@@ -12,7 +12,12 @@ class GetPhotos
     # look for photos of that place and put them in a list
     city = place.city
     country = place.country_name
-    list = flickr.photos.search :tags => "#{city} #{country}", :tag_mode => "ALL", :safe_search => '1' 
+    list = flickr.photos.search :tags => "#{city} #{country}", :tag_mode => "ALL", :safe_search => '1'
+    
+    # make sure the API call actually did something
+    if list["status"] == "fail"
+      @failed = true
+    end
     
     # make sure the list actually contains something and if it doesn't, do some alternate things (determined in uploaded_by, profile_link, and photo_url)
     @list_len = list.length
@@ -32,7 +37,9 @@ class GetPhotos
 
   # get the username of the user who uploaded the photo so that we can give them credit
   def uploaded_by
-    if @list_len == 0 # if the search doesn't find anything for that location
+    if @failed # if the API call fails
+      return "Sorry, looks like Flickr isn't cooperating right now"
+    elsif @list_len == 0 # if the search doesn't find anything for that location
       return "Sorry, looks like Flickr doesn't have a photo for this location, so have a panda instead"
     else
       return "Photo by #{@info["owner"]["username"]} on Flickr"
@@ -41,7 +48,7 @@ class GetPhotos
   
   # get the link to the profile of the user who uploaded the photo so that we can give them credit
   def profile_link
-    if @list_len == 0 # send them to the flickr homepage if there are no photos of that location
+    if @failed ||  @list_len == 0 # send them to the flickr homepage if there are no photos of that location or if the API call fails
       return "https://www.flickr.com/"
     else
       url = FlickRaw.url_profile(@info)
@@ -51,7 +58,9 @@ class GetPhotos
   
   # get the URL for the photo so that we can put that on the page
   def photo_url
-    if @list_len == 0 # put in a dummy photo if there are no photos of this location - I'll get some better placeholder photos later
+    if @failed
+      return "penguin.jpg"
+    elsif @list_len == 0 # use a picture of a panda if there are no photos for that location
       return "panda.jpg" 
     else
       FlickRaw.url_b(@info)
