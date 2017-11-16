@@ -10,7 +10,6 @@ class PlacesController < ApplicationController
     @place = Place.find(params[:id])    
     
     # find the country for the country info stuff
-    #c = @place.country_name
     @country = Country.find_by(country_name: @place.country_name)
     
     # set photos
