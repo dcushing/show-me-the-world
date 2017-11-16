@@ -39,9 +39,8 @@
 	<div class="col-xs-12 info-box">
 		<ul>
 			<li>Region: <%= @country.region %></li>
-			<li>Language: <%= @place.pop %></li>
-			<li>Population: <%= @place.pop %></li>
-			<li>Currency: <%= @place.pop %></li>
+			<li>Population: <%= number_with_delimiter(@place.pop) %></li>
+			<li>Currency: <%= @country.currency %></li>
 		</ul>
 		Sound good? Check <%= link_to "Google Flights", "https://www.google.com/flights/", target: "_blank" %> for flights, or <%= link_to "TripAdvisor", "https://www.tripadvisor.com/", target: "_blank"%> and <%= link_to "Wikitravel", "https://wikitravel.org/en/Main_Page", target: "_blank" %> for things to do.
 	</div>

@@ -1,3 +1,3 @@
 class Place < ApplicationRecord
-  has_one :country, through: :placenames
+  has_one :country #, through: :countryname
 end
