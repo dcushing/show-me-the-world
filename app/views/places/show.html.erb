@@ -1,6 +1,6 @@
 <% provide :title, @place.city %>
 
-<div class="row text-center" id="landing">
+<div class="row text-center landing">
 	<div class="col-xs-12">
 		<h3>You should go to</h3>
 		<h1><%= @place.city %>, <% if @place.province != "" %><%= @place.province %>, <% end %><%= @place.country_name %></h1>

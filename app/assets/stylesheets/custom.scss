@@ -1,20 +1,96 @@
 @import "bootstrap-sprockets";
 @import "bootstrap";
 
+/* fonts */
+@import url('https://fonts.googleapis.com/css?family=Open+Sans');
+@import url('https://fonts.googleapis.com/css?family=Love+Ya+Like+A+Sister|Open+Sans');
+
+/* colors */
+$example: #333;
+$gray: #5B585A;
+$blue: #5E677A;
+$green: #93AEA6;
+$yellow: #DDE4B5;
+$light-yellow: #ECF0D6;
+
+/* button */
+$btn-default-color:$blue;
+$btn-default-bg: $green;
+$btn-default-border:$yellow;
+$btn-primary-color: $btn-default-color;
+$btn-primary-bg: $btn-default-bg;
+$btn-primary-border: $btn-default-border;
+
+
+/* design by html tag */
+
+body {
+  font-family: 'Open Sans', sans-serif;
+  background-color: $light-yellow;
+  font-color: $blue;
+}
+
 div {
   padding-bottom: 0.5%;
 }
 
 h1 {
-  font-size: 45px;
+  font-size: 56px;
+  font-family: 'Love Ya Like A Sister', cursive;
+  font-color: $gray;
 };
 
-.info-box {
-  border: 1px solid #000;
-  padding:3%;
+h2 {
+  font-family: 'Love Ya Like A Sister', cursive;
+  font-color: $blue;
 }
+
+h3 {
+  font-family: 'Love Ya Like A Sister', cursive;
+  font-color: $gray;
+}
+
+a {
+  font-color: $blue;
+}
+
+/* design by class */
+
+.info-box {
+  border: 1px solid $green;
+  padding:3%;
+  background-color: $yellow;
+}
+
+.my-btn {
+  padding:2%;
+  margin: 2%;
+  border-radius:20px;
+  background-color: $green;
+  border: 1px solid $yellow;
+  font-family: 'Love Ya Like A Sister', cursive;
+  font-size: 32px;
+  color: $blue;
+  &:hover {
+    background-color: $green;
+    color: $blue;
+  }
+}
+
+.landing {
+  background-color: $yellow;
+  border: 1px solid $green;
+  padding: 9%;
+  margin-bottom: 3%;
+}
+
+/* design by ID */
 
 #info {
   margin-top:5%;
+}
+
+#last-faq{
+  margin-bottom:6%;
 }
 

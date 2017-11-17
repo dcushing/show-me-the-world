@@ -17,7 +17,7 @@ I still want to tweak the flickr search a bit, and a huge task is to provide a b
 Check it out on GitHub here: <%= link_to "https://github.com/dcushing/show-me-the-world", "https://github.com/dcushing/show-me-the-world", target: "_blank" %>
 
 <h3>What is this app built on?</h3>
-It's built in Ruby on Rails 5. I used the <%= link_to "flickraw gem", "https://github.com/hanklords/flickraw", target: "_blank" %> to access the Flickr API, and the <%= link_to "wikipedia-client gem", "https://github.com/kenpratt/wikipedia-client", target: "_blank" %> to access the Wikipedia API. The front end is using the jQuery, CSS, and JavaScript that Rails 5 comes with.
+It's built in Ruby on Rails 5. I used the <%= link_to "flickraw gem", "https://github.com/hanklords/flickraw", target: "_blank" %> to access the Flickr API, and the <%= link_to "wikipedia-client gem", "https://github.com/kenpratt/wikipedia-client", target: "_blank" %> to access the Wikipedia API. The front end is using the jQuery, CSS, and JavaScript that Rails 5 comes with. The fonts are "Open Sans" and "Love Ya Like A Sister," both of which are hosted on <%= link_to "Google Fonts", "https://fonts.google.com/", target: "_blank" %>.
 
 <h3>How do you get the pictures from Flickr?</h3>
 I use the <%= link_to "flickraw gem", "https://github.com/hanklords/flickraw", target: "_blank" %> to access the Flickr API, and I created a service in my app called get_photos.rb. I use it to search Flickr for photos tagged with the city and country, and then I use random photos from that query to display on the page. I'm aware that it's not a perfect way to search for something, so I'm continuing to make small tweaks to the search query to see what I can do to improve it. (The panda and penguin pictures are not from Flickr. The panda is from <%= link_to "here on Wikimedia Commons", "https://commons.wikimedia.org/wiki/File:1_panda_trio_sichuan_china_2011.jpg", target: "_blank" %> and the penguin is from <%= link_to "here on Wikimedia Commons", "https://commons.wikimedia.org/wiki/File:African_penguin_near_Boulders_Beach.jpg", target: "_blank" %>.)
@@ -29,8 +29,7 @@ I got the list of cities from <%= link_to "here", "https://simplemaps.com/data/w
 Sure, <%= link_to "send me a comment here", "https://goo.gl/forms/UIp3AMygIv7O5CT42", target: "_blank" %>. I'm happy to talk about it.
 
 <h3>Just who are you, anyway?</h3>
-My name's Danielle. I love to travel, drive myself crazy trying to program new features that I've never built before, and talk about grammar. You can find my website <%= link_to "here", "http://daniellecushing.net/", target: "_blank" %>, and I'm on <%= link_to "GitHub here", "https://github.com/dcushing", target: "_blank" %>.
-
+<p id="last-faq">My name's Danielle. I love to travel, drive myself crazy trying to program new features that I've never built before, and talk about grammar. You can find my website <%= link_to "here", "http://daniellecushing.net/", target: "_blank" %>, and I'm on <%= link_to "GitHub here", "https://github.com/dcushing", target: "_blank" %>.</p>
 
 
 
