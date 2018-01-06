@@ -12,7 +12,7 @@ namespace :import do
   task countries: :environment do
     filename = File.join Rails.root, "country-codes.csv"
     CSV.foreach(filename, headers: true) do |row|
-      country = Country.create(name: row["official_name_en"], region: row["Sub-region Name"], lang: row["Languages"], currency: row["ISO4217-currency_name"])
+      country = Country.create(country_name: row["official_name_en"], region: row["Sub-region Name"], lang: row["Languages"], currency: row["ISO4217-currency_name"])
         
       puts "#{name} - #{country.errors.full_messages}" if country.errors.any? # show me error messages if there's a problem
       counter += 1 if country.persisted?
