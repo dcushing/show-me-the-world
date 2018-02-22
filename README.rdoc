@@ -1,8 +1,16 @@
 = SHOW ME THE WORLD
 
-A Ruby on Rails app that generates a random location and suggests a vacation to the user.
+A Ruby on Rails app that generates a random location and suggests a vacation to the user. Perfect for the travel-addict in your life!
 
-Created mostly as the final projects for the edX CS50 course, but also because I want something to help me plan my future vacations :)
+== How to use it
+Navigate to the front page, click "Where to?" and get a random location somewhere in the world.
+
+== How it works
+The application has a database of over 2800 cities from all around the world. When you navigate to the homepage, the application selects a random city from the database, and it shows you basic information about that city.
+When the page loads, it also goes out to Flickr to look for some photos that are tagged with that city and country. (If Flickr doesn't have any photos for that location or if Flickr is down, you get pandas and penguins.)
+The application also gets some information from Wikipedia about the location it pulls. If there's an error with the Wikipedia query, you see a quote about travel.
+Right now the application is only available in English, but I plan to develop an Italian translation as a way to learn about i18n. 
+The UI is built on Bootstrap, and it uses custom error pages if you run into something you shouldn't see on the site.
 
 == COMPLETED FUNCTIONALITY
 * Database of cities from around the world
@@ -16,7 +24,6 @@ Created mostly as the final projects for the edX CS50 course, but also because I
 == IN-PROGRESS FUNCTIONALITY
 * i18n - set up an Italian translation of the UI (on hold)
 * Write tests (ongoing; one of the goals of this project is to get better at TDD)
-
 
 == PLANNED FUNCTIONALITY
 * Make the UI a little prettier
@@ -35,7 +42,7 @@ Credit for explaining how to show a partial only when a button is clicked: https
 
 Credit for explaining how to set up basic custom error pages: https://mattbrictson.com/dynamic-rails-error-pages
 
-Check out the edX CS50 class here: https://www.edx.org/course/introduction-computer-science-harvardx-cs50x
+Check out the edX CS50 class here (which is where the idea for this project began): https://www.edx.org/course/introduction-computer-science-harvardx-cs50x
 
-I highly recommend checking CS50 out; it's a lot of hard work (and I'm unable to publicly post any code I wrote for it due to the course policies), but it has taught me a TON about programming and I feel it's definitely worth the effort to push through how difficult it is.
+I highly recommend checking CS50 out; it's a lot of hard work (I'm unable to publicly post any code I wrote for it due to the course policies), but it has taught me a TON about programming and I feel it's definitely worth the effort to push through how difficult it is.
 

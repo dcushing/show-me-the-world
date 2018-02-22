@@ -13,6 +13,8 @@ gem 'rails-i18n'
 gem 'flickraw'
 gem 'flickraw-cached'
 gem 'wikipedia-client'
+gem 'aws-sdk',      '~> 3'
+gem 'nokogiri',     '~> 1.8.1'
 
 group :production do
   gem 'pg'
