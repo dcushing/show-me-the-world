@@ -1,7 +1,19 @@
 # Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
 
-one:
-  country_name: MyString
-  region: MyString
-  lang: MyString
-  currency: MyString
+us:
+  county_name: United States of America
+  region: North America
+  lang: en-US,es-US,haw,fr
+  currency: US Dollar
+
+gabon:
+  country_name: Gabon
+  region: Sub-Saharan Africa
+  lang: fr-GA
+  currency: CFA Franc BEAC
+
+canada:
+  country_name: Canada
+  region: North America
+  lang: en-CA,fr-Ca,iu
+  currency: Canadian Dollar

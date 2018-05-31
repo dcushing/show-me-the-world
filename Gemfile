@@ -13,13 +13,12 @@ gem 'rails-i18n'
 gem 'flickraw'
 gem 'flickraw-cached'
 gem 'wikipedia-client'
+gem 'pg'
 
 group :production do
-  gem 'pg'
 end
 
 group :development, :test do
-  gem 'sqlite3', '1.3.13'
   gem 'byebug',  '9.0.6', platform: :mri
 end
 
