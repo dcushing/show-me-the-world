@@ -1,4 +1,5 @@
 require 'csv'
+#require 'aws-sdk'
 
 # Thanks to https://gorails.com/episodes/intro-to-importing-from-csv for the tutorial on how to do this!
 # CSV of country data thanks to GitHub datasets (https://raw.githubusercontent.com/datasets/country-codes/master/data/country-codes.csv)

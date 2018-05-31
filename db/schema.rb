@@ -10,7 +10,10 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20171116093303) do
+ActiveRecord::Schema.define(version: 0) do
+
+  # These are extensions that must be enabled in order to support this database
+  enable_extension "plpgsql"
 
   create_table "countries", force: :cascade do |t|
     t.string "country_name"
@@ -21,6 +24,10 @@ ActiveRecord::Schema.define(version: 20171116093303) do
     t.datetime "updated_at", null: false
   end
 
+  create_table "countries_places", id: false, force: :cascade do |t|
+    t.integer "country_id", null: false
+    t.integer "place_id", null: false
+  end
 
   create_table "places", force: :cascade do |t|
     t.string "city"
@@ -35,13 +42,5 @@ ActiveRecord::Schema.define(version: 20171116093303) do
     t.datetime "updated_at", null: false
     t.integer "place_id"
   end
-  
-  
-  create_table "countries_places", id: false, force: :cascade do |t|
-    t.integer "country_id", null: false
-    t.integer "place_id", null: false
-    t.index [nil], name: "index_countries_places_on_country_name"
-  end
-
 
 end

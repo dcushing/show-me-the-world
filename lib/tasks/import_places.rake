@@ -1,5 +1,6 @@
 require 'csv'
 
+# This is the import rake task for seeding the Places database on my local machine in dev
 # Thanks to https://gorails.com/episodes/intro-to-importing-from-csv for the tutorial on how to do this!
 # CSV of place names thanks to http://simplemaps.com/data/world-cities
 
@@ -14,7 +15,7 @@ namespace :import do
     filename = File.join Rails.root, "simplemaps-worldcities-basic.csv"
     CSV.foreach(filename, headers: true) do |row|
       if row["pop"].to_i >= 100000
-        place = Place.create(city: row["city"], lat: row["lat"], lng: row["lng"], pop: row["pop"], country: row["country"], iso2: row["iso2"], iso3: row["iso3"], province: row["province"], place_id: id_num)
+        place = Place.create(city: row["city"], lat: row["lat"], lng: row["lng"], pop: row["pop"], country_name: row["country"], iso2: row["iso2"], iso3: row["iso3"], province: row["province"], place_id: id_num)
         
         puts "#{city}, #{iso2} - #{place.errors.full_messages}" if place.errors.any? # show me error messages if there's a problem
         counter += 1 if place.persisted?
