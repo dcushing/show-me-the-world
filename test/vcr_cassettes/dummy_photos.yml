@@ -15,8 +15,8 @@ http_interactions:
       - FlickRaw/0.9.9
       Authorization:
       - OAuth realm="https://api.flickr.com/services/rest/", oauth_consumer_key="10a9d6b7d1494c7ae615db24e02ea28b",
-        oauth_nonce="TC%2FUuTtvUcNxMXAfEmw0xp2tiZ0tmdOQXRPAEDcUVv8%3D", oauth_signature="47652ab918e0f91f%26",
-        oauth_signature_method="PLAINTEXT", oauth_timestamp="1510389052", oauth_token="",
+        oauth_nonce="irEdwTUBp4uK5eYF2n3ZACmOQbs%2FyESPU9m2s11zclQ%3D", oauth_signature="47652ab918e0f91f%26",
+        oauth_signature_method="PLAINTEXT", oauth_timestamp="1527775098", oauth_token="",
         oauth_version="1.0"
       Content-Type:
       - application/x-www-form-urlencoded
@@ -26,7 +26,7 @@ http_interactions:
       message: OK
     headers:
       Date:
-      - Sat, 11 Nov 2017 08:30:53 GMT
+      - Thu, 31 May 2018 13:58:19 GMT
       Content-Type:
       - application/json
       Content-Length:
@@ -40,25 +40,40 @@ http_interactions:
       Cache-Control:
       - private
       X-Served-By:
-      - www-bm026.flickr.bf1.yahoo.com
+      - www347.flickr.bf1.yahoo.com
       X-Frame-Options:
       - SAMEORIGIN
       Vary:
       - Accept-Encoding
       Age:
-      - '0'
+      - '2'
       Via:
-      - http/1.1 fts126.flickr.bf1.yahoo.com (ApacheTrafficServer [cMsSf ]), http/1.1
-        r31.ycpi.tw1.yahoo.net (ApacheTrafficServer [cMsSf ])
+      - http/1.1 fts121.flickr.bf1.yahoo.com (ApacheTrafficServer [cMsSf ]), http/1.1
+        e8.ycpi.dnb.yahoo.com (ApacheTrafficServer [cMsSf ])
       Server:
       - ATS
       Connection:
       - keep-alive
+      Strict-Transport-Security:
+      - max-age=15552000
+      Expect-Ct:
+      - max-age=31536000, report-uri="http://csp.yahoo.com/beacon/csp?src=yahoocom-expect-ct-report-only"
+      Public-Key-Pins-Report-Only:
+      - max-age=2592000; pin-sha256="2fRAUXyxl4A1/XHrKNBmc8bTkzA7y4FB/GLJuNAzCqY=";
+        pin-sha256="2oALgLKofTmeZvoZ1y/fSZg7R9jPMix8eVA6DH4o/q8="; pin-sha256="Gtk3r1evlBrs0hG3fm3VoM19daHexDWP//OCmeeMr5M=";
+        pin-sha256="I/Lt/z7ekCWanjD0Cvj5EqXls2lOaThEA0H2Bg4BT/o="; pin-sha256="JbQbUG5JMJUoI6brnx0x3vZF6jilxsapbXGVfjhN8Fg=";
+        pin-sha256="SVqWumuteCQHvVIaALrOZXuzVVVeS7f4FGxxu6V+es4="; pin-sha256="UZJDjsNp1+4M5x9cbbdflB779y5YRBcV6Z6rBMLIrO4=";
+        pin-sha256="Wd8xe/qfTwq3ylFNd3IpaqLHZbh2ZNCLluVzmeNkcpw="; pin-sha256="WoiWRyIOVNa9ihaBciRSC7XHjliYS9VwUGOIud4PB18=";
+        pin-sha256="cAajgxHlj7GTSEIzIYIQxmEloOSoJq7VOaxWHfv72QM="; pin-sha256="dolnbtzEBnELx/9lOEQ22e6OZO/QNb6VSSX2XHA3E7A=";
+        pin-sha256="i7WTqTvh0OioIruIfFR4kMPnBqrS2rdiVPl/s2uC/CY="; pin-sha256="iduNzFNKpwYZ3se/XV+hXcbUonlLw09QPa6AYUwpu4M=";
+        pin-sha256="lnsM2T/O9/J84sJFdnrpsFp3awZJ+ZZbYpCWhGloaHI="; pin-sha256="r/mIkG3eEpVdm+u/ko/cwxzOMo1bk4TyHIlByibiA5E=";
+        pin-sha256="uUwZgwDOxcBXrQcntwu+kYFpkiVkOaezL0WYEZ3anJc="; includeSubdomains;
+        report-uri="http://csp.yahoo.com/beacon/csp?src=yahoocom-hpkp-report-only"
     body:
       encoding: ASCII-8BIT
       string: '{"photos":{"page":1,"pages":0,"perpage":100,"total":"0","photo":[]},"stat":"ok"}'
     http_version: 
-  recorded_at: Sat, 11 Nov 2017 08:30:53 GMT
+  recorded_at: Thu, 31 May 2018 13:58:19 GMT
 - request:
     method: post
     uri: https://api.flickr.com/services/rest/
@@ -74,8 +89,8 @@ http_interactions:
       - FlickRaw/0.9.9
       Authorization:
       - OAuth realm="https://api.flickr.com/services/rest/", oauth_consumer_key="10a9d6b7d1494c7ae615db24e02ea28b",
-        oauth_nonce="sFc3ZZZ%2FWxxNwvgHbSB7jQRmwYR2fAkP7ORArZgTjg8%3D", oauth_signature="47652ab918e0f91f%26",
-        oauth_signature_method="PLAINTEXT", oauth_timestamp="1510389053", oauth_token="",
+        oauth_nonce="rv03TSdC%2FCs6YO%2Ftzpz2ZfGKERqIuv5oJpJMsPZwajk%3D", oauth_signature="47652ab918e0f91f%26",
+        oauth_signature_method="PLAINTEXT", oauth_timestamp="1527775099", oauth_token="",
         oauth_version="1.0"
       Content-Type:
       - application/x-www-form-urlencoded
@@ -85,7 +100,7 @@ http_interactions:
       message: OK
     headers:
       Date:
-      - Sat, 11 Nov 2017 08:30:54 GMT
+      - Thu, 31 May 2018 13:58:19 GMT
       Content-Type:
       - application/json
       Content-Length:
@@ -99,7 +114,7 @@ http_interactions:
       Cache-Control:
       - private
       X-Served-By:
-      - www293.flickr.bf1.yahoo.com
+      - www294.flickr.bf1.yahoo.com
       X-Frame-Options:
       - SAMEORIGIN
       Vary:
@@ -107,17 +122,32 @@ http_interactions:
       Age:
       - '0'
       Via:
-      - http/1.1 fts123.flickr.bf1.yahoo.com (ApacheTrafficServer [cMsSf ]), http/1.1
-        r31.ycpi.tw1.yahoo.net (ApacheTrafficServer [cMsSf ])
+      - http/1.1 fts108.flickr.bf1.yahoo.com (ApacheTrafficServer [cMsSf ]), http/1.1
+        e6.ycpi.dnb.yahoo.com (ApacheTrafficServer [cMsSf ])
       Server:
       - ATS
       Connection:
       - keep-alive
+      Strict-Transport-Security:
+      - max-age=15552000
+      Expect-Ct:
+      - max-age=31536000, report-uri="http://csp.yahoo.com/beacon/csp?src=yahoocom-expect-ct-report-only"
+      Public-Key-Pins-Report-Only:
+      - max-age=2592000; pin-sha256="2fRAUXyxl4A1/XHrKNBmc8bTkzA7y4FB/GLJuNAzCqY=";
+        pin-sha256="2oALgLKofTmeZvoZ1y/fSZg7R9jPMix8eVA6DH4o/q8="; pin-sha256="Gtk3r1evlBrs0hG3fm3VoM19daHexDWP//OCmeeMr5M=";
+        pin-sha256="I/Lt/z7ekCWanjD0Cvj5EqXls2lOaThEA0H2Bg4BT/o="; pin-sha256="JbQbUG5JMJUoI6brnx0x3vZF6jilxsapbXGVfjhN8Fg=";
+        pin-sha256="SVqWumuteCQHvVIaALrOZXuzVVVeS7f4FGxxu6V+es4="; pin-sha256="UZJDjsNp1+4M5x9cbbdflB779y5YRBcV6Z6rBMLIrO4=";
+        pin-sha256="Wd8xe/qfTwq3ylFNd3IpaqLHZbh2ZNCLluVzmeNkcpw="; pin-sha256="WoiWRyIOVNa9ihaBciRSC7XHjliYS9VwUGOIud4PB18=";
+        pin-sha256="cAajgxHlj7GTSEIzIYIQxmEloOSoJq7VOaxWHfv72QM="; pin-sha256="dolnbtzEBnELx/9lOEQ22e6OZO/QNb6VSSX2XHA3E7A=";
+        pin-sha256="i7WTqTvh0OioIruIfFR4kMPnBqrS2rdiVPl/s2uC/CY="; pin-sha256="iduNzFNKpwYZ3se/XV+hXcbUonlLw09QPa6AYUwpu4M=";
+        pin-sha256="lnsM2T/O9/J84sJFdnrpsFp3awZJ+ZZbYpCWhGloaHI="; pin-sha256="r/mIkG3eEpVdm+u/ko/cwxzOMo1bk4TyHIlByibiA5E=";
+        pin-sha256="uUwZgwDOxcBXrQcntwu+kYFpkiVkOaezL0WYEZ3anJc="; includeSubdomains;
+        report-uri="http://csp.yahoo.com/beacon/csp?src=yahoocom-hpkp-report-only"
     body:
       encoding: ASCII-8BIT
       string: '{"photos":{"page":1,"pages":0,"perpage":100,"total":"0","photo":[]},"stat":"ok"}'
     http_version: 
-  recorded_at: Sat, 11 Nov 2017 08:30:54 GMT
+  recorded_at: Thu, 31 May 2018 13:58:19 GMT
 - request:
     method: post
     uri: https://api.flickr.com/services/rest/
@@ -133,8 +163,8 @@ http_interactions:
       - FlickRaw/0.9.9
       Authorization:
       - OAuth realm="https://api.flickr.com/services/rest/", oauth_consumer_key="10a9d6b7d1494c7ae615db24e02ea28b",
-        oauth_nonce="ok2rcO17F6E1%2BkjIYM9nXvBmuFguAqMBsoz6Nsb3WiM%3D", oauth_signature="47652ab918e0f91f%26",
-        oauth_signature_method="PLAINTEXT", oauth_timestamp="1510389054", oauth_token="",
+        oauth_nonce="RnzjWnRrPeXROAiLPS5JEWv%2Ba1zOvH0%2FA5%2BJ85FKLCQ%3D", oauth_signature="47652ab918e0f91f%26",
+        oauth_signature_method="PLAINTEXT", oauth_timestamp="1527775099", oauth_token="",
         oauth_version="1.0"
       Content-Type:
       - application/x-www-form-urlencoded
@@ -144,7 +174,7 @@ http_interactions:
       message: OK
     headers:
       Date:
-      - Sat, 11 Nov 2017 08:30:55 GMT
+      - Thu, 31 May 2018 13:58:20 GMT
       Content-Type:
       - application/json
       Content-Length:
@@ -158,7 +188,7 @@ http_interactions:
       Cache-Control:
       - private
       X-Served-By:
-      - www68.flickr.bf1.yahoo.com
+      - www47.flickr.bf1.yahoo.com
       X-Frame-Options:
       - SAMEORIGIN
       Vary:
@@ -166,17 +196,32 @@ http_interactions:
       Age:
       - '0'
       Via:
-      - http/1.1 fts115.flickr.bf1.yahoo.com (ApacheTrafficServer [cMsSf ]), http/1.1
-        e18.ycpi.tpb.yahoo.com (ApacheTrafficServer [cMsSf ])
+      - http/1.1 fts127.flickr.bf1.yahoo.com (ApacheTrafficServer [cMsSf ]), http/1.1
+        e8.ycpi.dnb.yahoo.com (ApacheTrafficServer [cMsSf ])
       Server:
       - ATS
       Connection:
       - keep-alive
+      Strict-Transport-Security:
+      - max-age=15552000
+      Expect-Ct:
+      - max-age=31536000, report-uri="http://csp.yahoo.com/beacon/csp?src=yahoocom-expect-ct-report-only"
+      Public-Key-Pins-Report-Only:
+      - max-age=2592000; pin-sha256="2fRAUXyxl4A1/XHrKNBmc8bTkzA7y4FB/GLJuNAzCqY=";
+        pin-sha256="2oALgLKofTmeZvoZ1y/fSZg7R9jPMix8eVA6DH4o/q8="; pin-sha256="Gtk3r1evlBrs0hG3fm3VoM19daHexDWP//OCmeeMr5M=";
+        pin-sha256="I/Lt/z7ekCWanjD0Cvj5EqXls2lOaThEA0H2Bg4BT/o="; pin-sha256="JbQbUG5JMJUoI6brnx0x3vZF6jilxsapbXGVfjhN8Fg=";
+        pin-sha256="SVqWumuteCQHvVIaALrOZXuzVVVeS7f4FGxxu6V+es4="; pin-sha256="UZJDjsNp1+4M5x9cbbdflB779y5YRBcV6Z6rBMLIrO4=";
+        pin-sha256="Wd8xe/qfTwq3ylFNd3IpaqLHZbh2ZNCLluVzmeNkcpw="; pin-sha256="WoiWRyIOVNa9ihaBciRSC7XHjliYS9VwUGOIud4PB18=";
+        pin-sha256="cAajgxHlj7GTSEIzIYIQxmEloOSoJq7VOaxWHfv72QM="; pin-sha256="dolnbtzEBnELx/9lOEQ22e6OZO/QNb6VSSX2XHA3E7A=";
+        pin-sha256="i7WTqTvh0OioIruIfFR4kMPnBqrS2rdiVPl/s2uC/CY="; pin-sha256="iduNzFNKpwYZ3se/XV+hXcbUonlLw09QPa6AYUwpu4M=";
+        pin-sha256="lnsM2T/O9/J84sJFdnrpsFp3awZJ+ZZbYpCWhGloaHI="; pin-sha256="r/mIkG3eEpVdm+u/ko/cwxzOMo1bk4TyHIlByibiA5E=";
+        pin-sha256="uUwZgwDOxcBXrQcntwu+kYFpkiVkOaezL0WYEZ3anJc="; includeSubdomains;
+        report-uri="http://csp.yahoo.com/beacon/csp?src=yahoocom-hpkp-report-only"
     body:
       encoding: ASCII-8BIT
       string: '{"photos":{"page":1,"pages":0,"perpage":100,"total":"0","photo":[]},"stat":"ok"}'
     http_version: 
-  recorded_at: Sat, 11 Nov 2017 08:30:55 GMT
+  recorded_at: Thu, 31 May 2018 13:58:20 GMT
 - request:
     method: get
     uri: https://en.wikipedia.org/w/api.php?action=query&explaintext=&format=json&inprop=url&prop=info%7Crevisions%7Clinks%7Cextlinks%7Cimages%7Ccategories%7Ccoordinates%7Ctemplates%7Cextracts%7Cpageimages&rvprop=content&titles=Mekambo,%20Gabon
@@ -196,7 +241,7 @@ http_interactions:
       message: OK
     headers:
       Date:
-      - Sat, 11 Nov 2017 08:30:57 GMT
+      - Thu, 31 May 2018 13:58:20 GMT
       Content-Type:
       - application/json; charset=utf-8
       Content-Length:
@@ -204,52 +249,52 @@ http_interactions:
       Connection:
       - keep-alive
       Server:
-      - mw1235.eqiad.wmnet
+      - mw1315.eqiad.wmnet
       X-Powered-By:
       - HHVM/3.18.6-dev
-      X-Content-Type-Options:
-      - nosniff
-      Cache-Control:
-      - private, must-revalidate, max-age=0
       P3p:
       - CP="This is not a P3P policy! See https://en.wikipedia.org/wiki/Special:CentralAutoLogin/P3P
         for more info."
-      X-Frame-Options:
-      - SAMEORIGIN
-      Content-Disposition:
-      - inline; filename="api-result.json"
+      Cache-Control:
+      - private, must-revalidate, max-age=0
       Vary:
       - Accept-Encoding,Treat-as-Untrusted,X-Forwarded-Proto,Cookie,Authorization
+      Content-Disposition:
+      - inline; filename=api-result.json
+      X-Content-Type-Options:
+      - nosniff
+      X-Frame-Options:
+      - SAMEORIGIN
       Backend-Timing:
-      - D=28997 t=1510389057185284
+      - D=32486 t=1527775100759341
       X-Varnish:
-      - 250385980, 631768856, 134278870, 967548832
+      - 321496307, 650104971
       Via:
-      - 1.1 varnish-v4, 1.1 varnish-v4, 1.1 varnish-v4, 1.1 varnish-v4
+      - 1.1 varnish (Varnish/5.1), 1.1 varnish (Varnish/5.1)
       Accept-Ranges:
       - bytes
       Age:
       - '0'
       X-Cache:
-      - cp1068 pass, cp2001 pass, cp4028 pass, cp4027 pass
+      - cp1054 pass, cp1052 pass
       X-Cache-Status:
       - pass
       Strict-Transport-Security:
       - max-age=106384710; includeSubDomains; preload
       Set-Cookie:
-      - GeoIP=VN:SG:Ho_Chi_Minh_City:10.81:106.64:v4; Path=/; secure; Domain=.wikipedia.org
-      - WMF-Last-Access-Global=11-Nov-2017;Path=/;Domain=.wikipedia.org;HttpOnly;secure;Expires=Wed,
-        13 Dec 2017 00:00:00 GMT
-      - WMF-Last-Access=11-Nov-2017;Path=/;HttpOnly;secure;Expires=Wed, 13 Dec 2017
-        00:00:00 GMT
+      - GeoIP=CA:ON:Toronto:43.75:-79.38:v4; Path=/; secure; Domain=.wikipedia.org
+      - WMF-Last-Access-Global=31-May-2018;Path=/;Domain=.wikipedia.org;HttpOnly;secure;Expires=Mon,
+        02 Jul 2018 12:00:00 GMT
+      - WMF-Last-Access=31-May-2018;Path=/;HttpOnly;secure;Expires=Mon, 02 Jul 2018
+        12:00:00 GMT
       X-Analytics:
       - ns=-1;special=Badtitle;https=1;nocookies=1
       X-Client-Ip:
-      - 113.173.18.126
+      - 184.75.212.43
     body:
       encoding: ASCII-8BIT
       string: '{"batchcomplete":"","query":{"pages":{"-1":{"ns":0,"title":"Mekambo,
         Gabon","missing":"","contentmodel":"wikitext","pagelanguage":"en","pagelanguagehtmlcode":"en","pagelanguagedir":"ltr","fullurl":"https://en.wikipedia.org/wiki/Mekambo,_Gabon","editurl":"https://en.wikipedia.org/w/index.php?title=Mekambo,_Gabon&action=edit","canonicalurl":"https://en.wikipedia.org/wiki/Mekambo,_Gabon"}}}}'
     http_version: 
-  recorded_at: Sat, 11 Nov 2017 08:30:57 GMT
+  recorded_at: Thu, 31 May 2018 13:58:20 GMT
 recorded_with: VCR 3.0.3
