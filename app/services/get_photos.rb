@@ -7,50 +7,82 @@ class GetPhotos
   FlickRaw.api_key=ENV['FLICKR_KEY']
   FlickRaw.shared_secret=ENV['FLICKR_SECRET']
 
-  def initialize(list)
-    @list_len = list[:list_len]
-    if @list_len > 0
-      photos_list = list[:photos_list]
-      index = Random.new.rand(0..@list_len)
-      photo = photos_list[index].to_hash 
-      puts photo
+  # get a list of photos for @place from Flickr when initializing
+    def initialize(place) 
+    # look for photos of that place and put them in a list
+    city = place[:city]
+    province = place[:province]
+    country = place[:country_name]
+
+    #search by "city country travel"
+    list = flickr.photos.search :tags => "#{city} #{country} travel", :tag_mode => "ALL", :safe_search => '1'
+
+    # if that doesn't work, search by "city country"
+    if list.length < 2
+      list = flickr.photos.search :tags => "#{city} #{country}", :tag_mode => "ALL", :safe_search => '1'
+
+      # if that doesn't work and province isn't nil for the place, search by "city province travel"
+      if list.length < 2 and province
+        list = flickr.photos.search :tags => "#{city} #{province} travel", :tag_mode => "ALL", :safe_search => '1'
+
+        # if that doesn't work, search by "city province"
+        if list.length < 2
+          list = flickr.photos.search :tags => "#{city} #{province}", :tag_mode => "ALL", :safe_search => '1'
+
+          # if that doesn't work, search by "province travel"
+          if list.length < 2
+            list = flickr.photos.search :tags => "#{province} travel", :tag_mode => "ALL", :safe_search => '1'
+
+            # if that doesn't work, search by "province"
+            if list.length < 2
+              list = flickr.photos.search :tags => "#{province}", :tag_mode => "ALL", :safe_search => '1'
+
+              # if that doesn't work, search by "country travel"
+              if list.length < 2
+                list = flickr.photos.search :tags => "#{country} travel", :tag_mode => "ALL", :safe_search => '1'
+
+                # if that doesn't work, search by "country"
+                if list.length < 2
+                  list = flickr.photos.search :tags => "#{country}", :safe_search => '1'
+                end
+              end
+            end
+          end
+        end
+
+        # if "city country" doesn't work and there's no province, search by "country travel"
+        elsif !province
+          list = flickr.photos.search :tags => "#{country} travel", :tag_mode => "ALL", :safe_search => '1'
+
+          # if that doesn't work, search by "country"
+          if list.length < 2
+            list = flickr.photos.search :tags => "#{country}", :tag_mode => "ALL", :safe_search => '1'
+          end
+        end
+      end
+
+      @photos_list = list["photo"]
+      @list_len = @photos_list.length
+  end
+
+  # get a photo from the list and return uploaded_by, profile_link, and photo_url
+  def photo
+    if @list_len == 0 # no photos for that location
+      return { "uploaded_by" => "Sorry, looks like Flickr doesn't have any photos for this location!", "profile_link" => "https://www.flickr.com/", "photo_url" => "https://www.flickr.com/" }
+    else # only one photo for the location, so we don't need to generate a random number
+      if @list_len == 1
+        photo = @photos_list[0].to_hash
+      else # get a random photo from the list
+        random = Random.new.rand(@list_len)
+        photo = @photos_list[random].to_hash
+    end
       id = photo["id"]
       secret = photo["secret"]
       @info = flickr.photos.getInfo :photo_id => id, :secret => secret
+      uploaded_by = "Photo by #{@info["owner"]["username"]} on Flickr"
+      profile_link = FlickRaw.url_profile(@info)
+      photo_url = FlickRaw.url_b(@info)
+      return { "uploaded_by" => uploaded_by, "profile_link" => profile_link, "photo_url" => photo_url }
     end
   end
-  
-
-  # get the username of the user who uploaded the photo so that we can give them credit
-  def uploaded_by
-    if @failed # if the API call fails
-      return "Sorry, looks like Flickr isn't cooperating right now"
-    elsif @list_len == 0 # if the search doesn't find anything for that location
-      return "Sorry, looks like Flickr doesn't have a photo for this location, so have a panda instead"
-    else
-      return "Photo by #{@info["owner"]["username"]} on Flickr"
-    end
-  end
-  
-  # get the link to the profile of the user who uploaded the photo so that we can give them credit
-  def profile_link
-    if @failed ||  @list_len == 0 # send them to the flickr homepage if there are no photos of that location or if the API call fails
-      return "https://www.flickr.com/"
-    else
-      url = FlickRaw.url_profile(@info)
-      return url
-    end
-  end
-  
-  # get the URL for the photo so that we can put that on the page
-  def photo_url
-    if @failed
-      return "penguin.jpg"
-    elsif @list_len == 0 # use a picture of a panda if there are no photos for that location
-      return "panda.jpg" 
-    else
-      FlickRaw.url_b(@info)
-    end
-  end
-  
 end
