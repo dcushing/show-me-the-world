@@ -25,3 +25,6 @@ config/initializers/secret_token.rb
 
 # Ignore my personal notes, because GitHub doesn’t need that
 notes.txt
+.env
+smtw.dump
+
