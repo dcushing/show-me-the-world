@@ -14,7 +14,7 @@ gem 'rails-i18n'
 gem 'flickraw'
 gem 'flickraw-cached'
 gem 'wikipedia-client'
-gem 'nokogiri',     '~> 1.8.1'
+gem 'nokogiri',     '~> 1.10.4'
 gem 'pg'
 
 group :production do
