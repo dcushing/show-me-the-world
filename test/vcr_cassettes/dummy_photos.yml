@@ -12,11 +12,11 @@ http_interactions:
       Accept:
       - "*/*"
       User-Agent:
-      - FlickRaw/0.9.9
+      - FlickRaw/0.9.10
       Authorization:
       - OAuth realm="https://api.flickr.com/services/rest/", oauth_consumer_key="10a9d6b7d1494c7ae615db24e02ea28b",
-        oauth_nonce="ouCAaPYjzEHPoK5yukvoucH2Zb3NUcgyeGL2KfVfeKs%3D", oauth_signature="47652ab918e0f91f%26",
-        oauth_signature_method="PLAINTEXT", oauth_timestamp="1530146458", oauth_token="",
+        oauth_nonce="IzmLsxJ2dHjv4FMjb5R%2FDf5QP7zuTisJIN1FDxjFJmI%3D", oauth_signature="47652ab918e0f91f%26",
+        oauth_signature_method="PLAINTEXT", oauth_timestamp="1569010669", oauth_token="",
         oauth_version="1.0"
       Content-Type:
       - application/x-www-form-urlencoded
@@ -25,55 +25,33 @@ http_interactions:
       code: 200
       message: OK
     headers:
-      Date:
-      - Thu, 28 Jun 2018 00:40:59 GMT
       Content-Type:
       - application/json
       Content-Length:
-      - '83'
-      P3p:
-      - policyref="https://policies.yahoo.com/w3c/p3p.xml", CP="CAO DSP COR CUR ADM
-        DEV TAI PSA PSD IVAi IVDi CONi TELo OTPi OUR DELi SAMi OTRi UNRi PUBi IND
-        PHY ONL UNI PUR FIN COM NAV INT DEM CNT STA POL HEA PRE LOC GOV"
-      X-Content-Type-Options:
-      - nosniff
-      Cache-Control:
-      - private
-      X-Served-By:
-      - www-bm023.flickr.bf1.yahoo.com
-      X-Frame-Options:
-      - SAMEORIGIN
-      Vary:
-      - Accept-Encoding
-      Age:
-      - '0'
-      Via:
-      - http/1.1 fts118.flickr.bf1.yahoo.com (ApacheTrafficServer [cMsSf ]), http/1.1
-        e20.ycpi.ata.yahoo.com (ApacheTrafficServer [cMsSf ])
-      Server:
-      - ATS
+      - '80'
       Connection:
       - keep-alive
-      Strict-Transport-Security:
-      - max-age=15552000
-      Expect-Ct:
-      - max-age=31536000, report-uri="http://csp.yahoo.com/beacon/csp?src=yahoocom-expect-ct-report-only"
-      Public-Key-Pins-Report-Only:
-      - max-age=2592000; pin-sha256="2fRAUXyxl4A1/XHrKNBmc8bTkzA7y4FB/GLJuNAzCqY=";
-        pin-sha256="2oALgLKofTmeZvoZ1y/fSZg7R9jPMix8eVA6DH4o/q8="; pin-sha256="Gtk3r1evlBrs0hG3fm3VoM19daHexDWP//OCmeeMr5M=";
-        pin-sha256="I/Lt/z7ekCWanjD0Cvj5EqXls2lOaThEA0H2Bg4BT/o="; pin-sha256="JbQbUG5JMJUoI6brnx0x3vZF6jilxsapbXGVfjhN8Fg=";
-        pin-sha256="SVqWumuteCQHvVIaALrOZXuzVVVeS7f4FGxxu6V+es4="; pin-sha256="UZJDjsNp1+4M5x9cbbdflB779y5YRBcV6Z6rBMLIrO4=";
-        pin-sha256="Wd8xe/qfTwq3ylFNd3IpaqLHZbh2ZNCLluVzmeNkcpw="; pin-sha256="WoiWRyIOVNa9ihaBciRSC7XHjliYS9VwUGOIud4PB18=";
-        pin-sha256="cAajgxHlj7GTSEIzIYIQxmEloOSoJq7VOaxWHfv72QM="; pin-sha256="dolnbtzEBnELx/9lOEQ22e6OZO/QNb6VSSX2XHA3E7A=";
-        pin-sha256="i7WTqTvh0OioIruIfFR4kMPnBqrS2rdiVPl/s2uC/CY="; pin-sha256="iduNzFNKpwYZ3se/XV+hXcbUonlLw09QPa6AYUwpu4M=";
-        pin-sha256="lnsM2T/O9/J84sJFdnrpsFp3awZJ+ZZbYpCWhGloaHI="; pin-sha256="r/mIkG3eEpVdm+u/ko/cwxzOMo1bk4TyHIlByibiA5E=";
-        pin-sha256="uUwZgwDOxcBXrQcntwu+kYFpkiVkOaezL0WYEZ3anJc="; includeSubdomains;
-        report-uri="http://csp.yahoo.com/beacon/csp?src=yahoocom-hpkp-report-only"
+      Date:
+      - Fri, 20 Sep 2019 20:17:50 GMT
+      Server:
+      - Apache/2.4.41 (Ubuntu)
+      X-Content-Type-Options:
+      - nosniff
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Cache:
+      - Miss from cloudfront
+      Via:
+      - 1.1 cd53a52a61fcb7bda797ab2120f02410.cloudfront.net (CloudFront)
+      X-Amz-Cf-Pop:
+      - DFW3-C1
+      X-Amz-Cf-Id:
+      - POhFVgkwsmSI8yOb4g4SvcXPVlJzkacZclihkXM2orCi2A_AJ2O2bw==
     body:
-      encoding: ASCII-8BIT
+      encoding: UTF-8
       string: '{"photos":{"page":1,"pages":0,"perpage":100,"total":"0","photo":[]},"stat":"ok"}'
     http_version: 
-  recorded_at: Thu, 28 Jun 2018 00:40:59 GMT
+  recorded_at: Fri, 20 Sep 2019 20:17:51 GMT
 - request:
     method: post
     uri: https://api.flickr.com/services/rest/
@@ -86,11 +64,11 @@ http_interactions:
       Accept:
       - "*/*"
       User-Agent:
-      - FlickRaw/0.9.9
+      - FlickRaw/0.9.10
       Authorization:
       - OAuth realm="https://api.flickr.com/services/rest/", oauth_consumer_key="10a9d6b7d1494c7ae615db24e02ea28b",
-        oauth_nonce="VxgQ6xkX5Adv18XcSrSnWpEuzwWmxz0BFs0UrfB%2BXIM%3D", oauth_signature="47652ab918e0f91f%26",
-        oauth_signature_method="PLAINTEXT", oauth_timestamp="1530146459", oauth_token="",
+        oauth_nonce="AWgwLk8aboTLS3XElygK2x%2BXx9X4VHR5QWpesEaxc3k%3D", oauth_signature="47652ab918e0f91f%26",
+        oauth_signature_method="PLAINTEXT", oauth_timestamp="1569010671", oauth_token="",
         oauth_version="1.0"
       Content-Type:
       - application/x-www-form-urlencoded
@@ -99,55 +77,33 @@ http_interactions:
       code: 200
       message: OK
     headers:
-      Date:
-      - Thu, 28 Jun 2018 00:40:59 GMT
       Content-Type:
       - application/json
       Content-Length:
-      - '83'
-      P3p:
-      - policyref="https://policies.yahoo.com/w3c/p3p.xml", CP="CAO DSP COR CUR ADM
-        DEV TAI PSA PSD IVAi IVDi CONi TELo OTPi OUR DELi SAMi OTRi UNRi PUBi IND
-        PHY ONL UNI PUR FIN COM NAV INT DEM CNT STA POL HEA PRE LOC GOV"
-      X-Content-Type-Options:
-      - nosniff
-      Cache-Control:
-      - private
-      X-Served-By:
-      - www-bm016.flickr.bf1.yahoo.com
-      X-Frame-Options:
-      - SAMEORIGIN
-      Vary:
-      - Accept-Encoding
-      Age:
-      - '0'
-      Via:
-      - http/1.1 fts124.flickr.bf1.yahoo.com (ApacheTrafficServer [cMsSf ]), http/1.1
-        e24.ycpi.ata.yahoo.com (ApacheTrafficServer [cMsSf ])
-      Server:
-      - ATS
+      - '80'
       Connection:
       - keep-alive
-      Strict-Transport-Security:
-      - max-age=15552000
-      Expect-Ct:
-      - max-age=31536000, report-uri="http://csp.yahoo.com/beacon/csp?src=yahoocom-expect-ct-report-only"
-      Public-Key-Pins-Report-Only:
-      - max-age=2592000; pin-sha256="2fRAUXyxl4A1/XHrKNBmc8bTkzA7y4FB/GLJuNAzCqY=";
-        pin-sha256="2oALgLKofTmeZvoZ1y/fSZg7R9jPMix8eVA6DH4o/q8="; pin-sha256="Gtk3r1evlBrs0hG3fm3VoM19daHexDWP//OCmeeMr5M=";
-        pin-sha256="I/Lt/z7ekCWanjD0Cvj5EqXls2lOaThEA0H2Bg4BT/o="; pin-sha256="JbQbUG5JMJUoI6brnx0x3vZF6jilxsapbXGVfjhN8Fg=";
-        pin-sha256="SVqWumuteCQHvVIaALrOZXuzVVVeS7f4FGxxu6V+es4="; pin-sha256="UZJDjsNp1+4M5x9cbbdflB779y5YRBcV6Z6rBMLIrO4=";
-        pin-sha256="Wd8xe/qfTwq3ylFNd3IpaqLHZbh2ZNCLluVzmeNkcpw="; pin-sha256="WoiWRyIOVNa9ihaBciRSC7XHjliYS9VwUGOIud4PB18=";
-        pin-sha256="cAajgxHlj7GTSEIzIYIQxmEloOSoJq7VOaxWHfv72QM="; pin-sha256="dolnbtzEBnELx/9lOEQ22e6OZO/QNb6VSSX2XHA3E7A=";
-        pin-sha256="i7WTqTvh0OioIruIfFR4kMPnBqrS2rdiVPl/s2uC/CY="; pin-sha256="iduNzFNKpwYZ3se/XV+hXcbUonlLw09QPa6AYUwpu4M=";
-        pin-sha256="lnsM2T/O9/J84sJFdnrpsFp3awZJ+ZZbYpCWhGloaHI="; pin-sha256="r/mIkG3eEpVdm+u/ko/cwxzOMo1bk4TyHIlByibiA5E=";
-        pin-sha256="uUwZgwDOxcBXrQcntwu+kYFpkiVkOaezL0WYEZ3anJc="; includeSubdomains;
-        report-uri="http://csp.yahoo.com/beacon/csp?src=yahoocom-hpkp-report-only"
+      Date:
+      - Fri, 20 Sep 2019 20:17:52 GMT
+      Server:
+      - Apache/2.4.41 (Ubuntu)
+      X-Content-Type-Options:
+      - nosniff
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Cache:
+      - Miss from cloudfront
+      Via:
+      - 1.1 f1a854950c455aa09a16f375d3bcf438.cloudfront.net (CloudFront)
+      X-Amz-Cf-Pop:
+      - DFW3-C1
+      X-Amz-Cf-Id:
+      - f_9jgIs650JaDwiBx5AbBZJuFLNbOhNusb6IAGm3i_9ZcrjNIUQobw==
     body:
-      encoding: ASCII-8BIT
+      encoding: UTF-8
       string: '{"photos":{"page":1,"pages":0,"perpage":100,"total":"0","photo":[]},"stat":"ok"}'
     http_version: 
-  recorded_at: Thu, 28 Jun 2018 00:40:59 GMT
+  recorded_at: Fri, 20 Sep 2019 20:17:52 GMT
 - request:
     method: post
     uri: https://api.flickr.com/services/rest/
@@ -160,11 +116,11 @@ http_interactions:
       Accept:
       - "*/*"
       User-Agent:
-      - FlickRaw/0.9.9
+      - FlickRaw/0.9.10
       Authorization:
       - OAuth realm="https://api.flickr.com/services/rest/", oauth_consumer_key="10a9d6b7d1494c7ae615db24e02ea28b",
-        oauth_nonce="%2F8NpV1%2Bwja8h%2Bqc0LRvlEttH18m%2BLqCTVH84P4iui3s%3D", oauth_signature="47652ab918e0f91f%26",
-        oauth_signature_method="PLAINTEXT", oauth_timestamp="1530146459", oauth_token="",
+        oauth_nonce="nWf%2BuNMIVlDlICLzVSu4ijbd9CiGu9k0fDXEHWq2LGA%3D", oauth_signature="47652ab918e0f91f%26",
+        oauth_signature_method="PLAINTEXT", oauth_timestamp="1569010672", oauth_token="",
         oauth_version="1.0"
       Content-Type:
       - application/x-www-form-urlencoded
@@ -173,55 +129,33 @@ http_interactions:
       code: 200
       message: OK
     headers:
-      Date:
-      - Thu, 28 Jun 2018 00:41:00 GMT
       Content-Type:
       - application/json
       Content-Length:
-      - '83'
-      P3p:
-      - policyref="https://policies.yahoo.com/w3c/p3p.xml", CP="CAO DSP COR CUR ADM
-        DEV TAI PSA PSD IVAi IVDi CONi TELo OTPi OUR DELi SAMi OTRi UNRi PUBi IND
-        PHY ONL UNI PUR FIN COM NAV INT DEM CNT STA POL HEA PRE LOC GOV"
-      X-Content-Type-Options:
-      - nosniff
-      Cache-Control:
-      - private
-      X-Served-By:
-      - www333.flickr.bf1.yahoo.com
-      X-Frame-Options:
-      - SAMEORIGIN
-      Vary:
-      - Accept-Encoding
-      Age:
-      - '0'
-      Via:
-      - http/1.1 fts129.flickr.bf1.yahoo.com (ApacheTrafficServer [cMsSf ]), http/1.1
-        e22.ycpi.ata.yahoo.com (ApacheTrafficServer [cMsSf ])
-      Server:
-      - ATS
+      - '80'
       Connection:
       - keep-alive
-      Strict-Transport-Security:
-      - max-age=15552000
-      Expect-Ct:
-      - max-age=31536000, report-uri="http://csp.yahoo.com/beacon/csp?src=yahoocom-expect-ct-report-only"
-      Public-Key-Pins-Report-Only:
-      - max-age=2592000; pin-sha256="2fRAUXyxl4A1/XHrKNBmc8bTkzA7y4FB/GLJuNAzCqY=";
-        pin-sha256="2oALgLKofTmeZvoZ1y/fSZg7R9jPMix8eVA6DH4o/q8="; pin-sha256="Gtk3r1evlBrs0hG3fm3VoM19daHexDWP//OCmeeMr5M=";
-        pin-sha256="I/Lt/z7ekCWanjD0Cvj5EqXls2lOaThEA0H2Bg4BT/o="; pin-sha256="JbQbUG5JMJUoI6brnx0x3vZF6jilxsapbXGVfjhN8Fg=";
-        pin-sha256="SVqWumuteCQHvVIaALrOZXuzVVVeS7f4FGxxu6V+es4="; pin-sha256="UZJDjsNp1+4M5x9cbbdflB779y5YRBcV6Z6rBMLIrO4=";
-        pin-sha256="Wd8xe/qfTwq3ylFNd3IpaqLHZbh2ZNCLluVzmeNkcpw="; pin-sha256="WoiWRyIOVNa9ihaBciRSC7XHjliYS9VwUGOIud4PB18=";
-        pin-sha256="cAajgxHlj7GTSEIzIYIQxmEloOSoJq7VOaxWHfv72QM="; pin-sha256="dolnbtzEBnELx/9lOEQ22e6OZO/QNb6VSSX2XHA3E7A=";
-        pin-sha256="i7WTqTvh0OioIruIfFR4kMPnBqrS2rdiVPl/s2uC/CY="; pin-sha256="iduNzFNKpwYZ3se/XV+hXcbUonlLw09QPa6AYUwpu4M=";
-        pin-sha256="lnsM2T/O9/J84sJFdnrpsFp3awZJ+ZZbYpCWhGloaHI="; pin-sha256="r/mIkG3eEpVdm+u/ko/cwxzOMo1bk4TyHIlByibiA5E=";
-        pin-sha256="uUwZgwDOxcBXrQcntwu+kYFpkiVkOaezL0WYEZ3anJc="; includeSubdomains;
-        report-uri="http://csp.yahoo.com/beacon/csp?src=yahoocom-hpkp-report-only"
+      Date:
+      - Fri, 20 Sep 2019 20:17:53 GMT
+      Server:
+      - Apache/2.4.41 (Ubuntu)
+      X-Content-Type-Options:
+      - nosniff
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Cache:
+      - Miss from cloudfront
+      Via:
+      - 1.1 4e6b2f68c53dbedd5953c188691cfdf3.cloudfront.net (CloudFront)
+      X-Amz-Cf-Pop:
+      - DFW3-C1
+      X-Amz-Cf-Id:
+      - KYUfwpxIc8yAY1Nqm49OSnBJ4yksFwzxioPPY8KyvMWgkdqGw-93DA==
     body:
-      encoding: ASCII-8BIT
+      encoding: UTF-8
       string: '{"photos":{"page":1,"pages":0,"perpage":100,"total":"0","photo":[]},"stat":"ok"}'
     http_version: 
-  recorded_at: Thu, 28 Jun 2018 00:41:00 GMT
+  recorded_at: Fri, 20 Sep 2019 20:17:53 GMT
 - request:
     method: post
     uri: https://api.flickr.com/services/rest/
@@ -234,11 +168,11 @@ http_interactions:
       Accept:
       - "*/*"
       User-Agent:
-      - FlickRaw/0.9.9
+      - FlickRaw/0.9.10
       Authorization:
       - OAuth realm="https://api.flickr.com/services/rest/", oauth_consumer_key="10a9d6b7d1494c7ae615db24e02ea28b",
-        oauth_nonce="ZXe7bd%2F9TPmbJ16Sao4Mm%2BtDCZevWdilBLuVr1zVZSQ%3D", oauth_signature="47652ab918e0f91f%26",
-        oauth_signature_method="PLAINTEXT", oauth_timestamp="1530146460", oauth_token="",
+        oauth_nonce="KRulF%2Fs83us40Texvg%2BpSzdkRgZbZ2ffi0eG0%2FVzicY%3D", oauth_signature="47652ab918e0f91f%26",
+        oauth_signature_method="PLAINTEXT", oauth_timestamp="1569010673", oauth_token="",
         oauth_version="1.0"
       Content-Type:
       - application/x-www-form-urlencoded
@@ -247,55 +181,33 @@ http_interactions:
       code: 200
       message: OK
     headers:
-      Date:
-      - Thu, 28 Jun 2018 00:41:00 GMT
       Content-Type:
       - application/json
       Content-Length:
-      - '83'
-      P3p:
-      - policyref="https://policies.yahoo.com/w3c/p3p.xml", CP="CAO DSP COR CUR ADM
-        DEV TAI PSA PSD IVAi IVDi CONi TELo OTPi OUR DELi SAMi OTRi UNRi PUBi IND
-        PHY ONL UNI PUR FIN COM NAV INT DEM CNT STA POL HEA PRE LOC GOV"
-      X-Content-Type-Options:
-      - nosniff
-      Cache-Control:
-      - private
-      X-Served-By:
-      - www313.flickr.bf1.yahoo.com
-      X-Frame-Options:
-      - SAMEORIGIN
-      Vary:
-      - Accept-Encoding
-      Age:
-      - '0'
-      Via:
-      - http/1.1 fts115.flickr.bf1.yahoo.com (ApacheTrafficServer [cMsSf ]), http/1.1
-        e20.ycpi.ata.yahoo.com (ApacheTrafficServer [cMsSf ])
-      Server:
-      - ATS
+      - '80'
       Connection:
       - keep-alive
-      Strict-Transport-Security:
-      - max-age=15552000
-      Expect-Ct:
-      - max-age=31536000, report-uri="http://csp.yahoo.com/beacon/csp?src=yahoocom-expect-ct-report-only"
-      Public-Key-Pins-Report-Only:
-      - max-age=2592000; pin-sha256="2fRAUXyxl4A1/XHrKNBmc8bTkzA7y4FB/GLJuNAzCqY=";
-        pin-sha256="2oALgLKofTmeZvoZ1y/fSZg7R9jPMix8eVA6DH4o/q8="; pin-sha256="Gtk3r1evlBrs0hG3fm3VoM19daHexDWP//OCmeeMr5M=";
-        pin-sha256="I/Lt/z7ekCWanjD0Cvj5EqXls2lOaThEA0H2Bg4BT/o="; pin-sha256="JbQbUG5JMJUoI6brnx0x3vZF6jilxsapbXGVfjhN8Fg=";
-        pin-sha256="SVqWumuteCQHvVIaALrOZXuzVVVeS7f4FGxxu6V+es4="; pin-sha256="UZJDjsNp1+4M5x9cbbdflB779y5YRBcV6Z6rBMLIrO4=";
-        pin-sha256="Wd8xe/qfTwq3ylFNd3IpaqLHZbh2ZNCLluVzmeNkcpw="; pin-sha256="WoiWRyIOVNa9ihaBciRSC7XHjliYS9VwUGOIud4PB18=";
-        pin-sha256="cAajgxHlj7GTSEIzIYIQxmEloOSoJq7VOaxWHfv72QM="; pin-sha256="dolnbtzEBnELx/9lOEQ22e6OZO/QNb6VSSX2XHA3E7A=";
-        pin-sha256="i7WTqTvh0OioIruIfFR4kMPnBqrS2rdiVPl/s2uC/CY="; pin-sha256="iduNzFNKpwYZ3se/XV+hXcbUonlLw09QPa6AYUwpu4M=";
-        pin-sha256="lnsM2T/O9/J84sJFdnrpsFp3awZJ+ZZbYpCWhGloaHI="; pin-sha256="r/mIkG3eEpVdm+u/ko/cwxzOMo1bk4TyHIlByibiA5E=";
-        pin-sha256="uUwZgwDOxcBXrQcntwu+kYFpkiVkOaezL0WYEZ3anJc="; includeSubdomains;
-        report-uri="http://csp.yahoo.com/beacon/csp?src=yahoocom-hpkp-report-only"
+      Date:
+      - Fri, 20 Sep 2019 20:17:54 GMT
+      Server:
+      - Apache/2.4.41 (Ubuntu)
+      X-Content-Type-Options:
+      - nosniff
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Cache:
+      - Miss from cloudfront
+      Via:
+      - 1.1 160b1b86d788d5d24ce2320068c76e8a.cloudfront.net (CloudFront)
+      X-Amz-Cf-Pop:
+      - DFW3-C1
+      X-Amz-Cf-Id:
+      - Sl_4uQVBMFjpMaqjNnN5omiS_NPIRuop5F3Tx7rg_-tSPvmnPjMoJg==
     body:
-      encoding: ASCII-8BIT
+      encoding: UTF-8
       string: '{"photos":{"page":1,"pages":0,"perpage":100,"total":"0","photo":[]},"stat":"ok"}'
     http_version: 
-  recorded_at: Thu, 28 Jun 2018 00:41:01 GMT
+  recorded_at: Fri, 20 Sep 2019 20:17:55 GMT
 - request:
     method: post
     uri: https://api.flickr.com/services/rest/
@@ -308,11 +220,11 @@ http_interactions:
       Accept:
       - "*/*"
       User-Agent:
-      - FlickRaw/0.9.9
+      - FlickRaw/0.9.10
       Authorization:
       - OAuth realm="https://api.flickr.com/services/rest/", oauth_consumer_key="10a9d6b7d1494c7ae615db24e02ea28b",
-        oauth_nonce="tvNdBNCtAJAqTFXlvKna99CzV1js%2ByyGTajtx71QhVE%3D", oauth_signature="47652ab918e0f91f%26",
-        oauth_signature_method="PLAINTEXT", oauth_timestamp="1530146461", oauth_token="",
+        oauth_nonce="wJ7Exy7qDteTxTQ5LNsbQoJUfwU7Fz7Gh8jX7pwmd1g%3D", oauth_signature="47652ab918e0f91f%26",
+        oauth_signature_method="PLAINTEXT", oauth_timestamp="1569010675", oauth_token="",
         oauth_version="1.0"
       Content-Type:
       - application/x-www-form-urlencoded
@@ -321,55 +233,33 @@ http_interactions:
       code: 200
       message: OK
     headers:
-      Date:
-      - Thu, 28 Jun 2018 00:41:01 GMT
       Content-Type:
       - application/json
       Content-Length:
-      - '83'
-      P3p:
-      - policyref="https://policies.yahoo.com/w3c/p3p.xml", CP="CAO DSP COR CUR ADM
-        DEV TAI PSA PSD IVAi IVDi CONi TELo OTPi OUR DELi SAMi OTRi UNRi PUBi IND
-        PHY ONL UNI PUR FIN COM NAV INT DEM CNT STA POL HEA PRE LOC GOV"
-      X-Content-Type-Options:
-      - nosniff
-      Cache-Control:
-      - private
-      X-Served-By:
-      - www63.flickr.bf1.yahoo.com
-      X-Frame-Options:
-      - SAMEORIGIN
-      Vary:
-      - Accept-Encoding
-      Age:
-      - '0'
-      Via:
-      - http/1.1 fts123.flickr.bf1.yahoo.com (ApacheTrafficServer [cMsSf ]), http/1.1
-        e22.ycpi.ata.yahoo.com (ApacheTrafficServer [cMsSf ])
-      Server:
-      - ATS
+      - '80'
       Connection:
       - keep-alive
-      Strict-Transport-Security:
-      - max-age=15552000
-      Expect-Ct:
-      - max-age=31536000, report-uri="http://csp.yahoo.com/beacon/csp?src=yahoocom-expect-ct-report-only"
-      Public-Key-Pins-Report-Only:
-      - max-age=2592000; pin-sha256="2fRAUXyxl4A1/XHrKNBmc8bTkzA7y4FB/GLJuNAzCqY=";
-        pin-sha256="2oALgLKofTmeZvoZ1y/fSZg7R9jPMix8eVA6DH4o/q8="; pin-sha256="Gtk3r1evlBrs0hG3fm3VoM19daHexDWP//OCmeeMr5M=";
-        pin-sha256="I/Lt/z7ekCWanjD0Cvj5EqXls2lOaThEA0H2Bg4BT/o="; pin-sha256="JbQbUG5JMJUoI6brnx0x3vZF6jilxsapbXGVfjhN8Fg=";
-        pin-sha256="SVqWumuteCQHvVIaALrOZXuzVVVeS7f4FGxxu6V+es4="; pin-sha256="UZJDjsNp1+4M5x9cbbdflB779y5YRBcV6Z6rBMLIrO4=";
-        pin-sha256="Wd8xe/qfTwq3ylFNd3IpaqLHZbh2ZNCLluVzmeNkcpw="; pin-sha256="WoiWRyIOVNa9ihaBciRSC7XHjliYS9VwUGOIud4PB18=";
-        pin-sha256="cAajgxHlj7GTSEIzIYIQxmEloOSoJq7VOaxWHfv72QM="; pin-sha256="dolnbtzEBnELx/9lOEQ22e6OZO/QNb6VSSX2XHA3E7A=";
-        pin-sha256="i7WTqTvh0OioIruIfFR4kMPnBqrS2rdiVPl/s2uC/CY="; pin-sha256="iduNzFNKpwYZ3se/XV+hXcbUonlLw09QPa6AYUwpu4M=";
-        pin-sha256="lnsM2T/O9/J84sJFdnrpsFp3awZJ+ZZbYpCWhGloaHI="; pin-sha256="r/mIkG3eEpVdm+u/ko/cwxzOMo1bk4TyHIlByibiA5E=";
-        pin-sha256="uUwZgwDOxcBXrQcntwu+kYFpkiVkOaezL0WYEZ3anJc="; includeSubdomains;
-        report-uri="http://csp.yahoo.com/beacon/csp?src=yahoocom-hpkp-report-only"
+      Date:
+      - Fri, 20 Sep 2019 20:17:56 GMT
+      Server:
+      - Apache/2.4.41 (Ubuntu)
+      X-Content-Type-Options:
+      - nosniff
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Cache:
+      - Miss from cloudfront
+      Via:
+      - 1.1 e5d1ee16650956f26121cb5bd640c9e0.cloudfront.net (CloudFront)
+      X-Amz-Cf-Pop:
+      - DFW3-C1
+      X-Amz-Cf-Id:
+      - OhHoaWscsqRSlScdwXAOxM6948AHweUZokvZrGiFh-WN-hfg-WgLlA==
     body:
-      encoding: ASCII-8BIT
+      encoding: UTF-8
       string: '{"photos":{"page":1,"pages":0,"perpage":100,"total":"0","photo":[]},"stat":"ok"}'
     http_version: 
-  recorded_at: Thu, 28 Jun 2018 00:41:01 GMT
+  recorded_at: Fri, 20 Sep 2019 20:17:56 GMT
 - request:
     method: post
     uri: https://api.flickr.com/services/rest/
@@ -382,11 +272,11 @@ http_interactions:
       Accept:
       - "*/*"
       User-Agent:
-      - FlickRaw/0.9.9
+      - FlickRaw/0.9.10
       Authorization:
       - OAuth realm="https://api.flickr.com/services/rest/", oauth_consumer_key="10a9d6b7d1494c7ae615db24e02ea28b",
-        oauth_nonce="xDK%2BpAVZRygS3Gpl5Tul9duJZ%2BJikoh6s7zb3Cf2Xj0%3D", oauth_signature="47652ab918e0f91f%26",
-        oauth_signature_method="PLAINTEXT", oauth_timestamp="1530146461", oauth_token="",
+        oauth_nonce="%2FFQy%2BgwNZAWQmzHssXjtT3OqKD5DefOGWqTzghs%2FJ%2BI%3D", oauth_signature="47652ab918e0f91f%26",
+        oauth_signature_method="PLAINTEXT", oauth_timestamp="1569010676", oauth_token="",
         oauth_version="1.0"
       Content-Type:
       - application/x-www-form-urlencoded
@@ -395,55 +285,33 @@ http_interactions:
       code: 200
       message: OK
     headers:
-      Date:
-      - Thu, 28 Jun 2018 00:41:02 GMT
       Content-Type:
       - application/json
       Content-Length:
-      - '83'
-      P3p:
-      - policyref="https://policies.yahoo.com/w3c/p3p.xml", CP="CAO DSP COR CUR ADM
-        DEV TAI PSA PSD IVAi IVDi CONi TELo OTPi OUR DELi SAMi OTRi UNRi PUBi IND
-        PHY ONL UNI PUR FIN COM NAV INT DEM CNT STA POL HEA PRE LOC GOV"
-      X-Content-Type-Options:
-      - nosniff
-      Cache-Control:
-      - private
-      X-Served-By:
-      - www250.flickr.bf1.yahoo.com
-      X-Frame-Options:
-      - SAMEORIGIN
-      Vary:
-      - Accept-Encoding
-      Age:
-      - '2'
-      Via:
-      - http/1.1 fts128.flickr.bf1.yahoo.com (ApacheTrafficServer [cMsSf ]), http/1.1
-        e20.ycpi.ata.yahoo.com (ApacheTrafficServer [cMsSf ])
-      Server:
-      - ATS
+      - '80'
       Connection:
       - keep-alive
-      Strict-Transport-Security:
-      - max-age=15552000
-      Expect-Ct:
-      - max-age=31536000, report-uri="http://csp.yahoo.com/beacon/csp?src=yahoocom-expect-ct-report-only"
-      Public-Key-Pins-Report-Only:
-      - max-age=2592000; pin-sha256="2fRAUXyxl4A1/XHrKNBmc8bTkzA7y4FB/GLJuNAzCqY=";
-        pin-sha256="2oALgLKofTmeZvoZ1y/fSZg7R9jPMix8eVA6DH4o/q8="; pin-sha256="Gtk3r1evlBrs0hG3fm3VoM19daHexDWP//OCmeeMr5M=";
-        pin-sha256="I/Lt/z7ekCWanjD0Cvj5EqXls2lOaThEA0H2Bg4BT/o="; pin-sha256="JbQbUG5JMJUoI6brnx0x3vZF6jilxsapbXGVfjhN8Fg=";
-        pin-sha256="SVqWumuteCQHvVIaALrOZXuzVVVeS7f4FGxxu6V+es4="; pin-sha256="UZJDjsNp1+4M5x9cbbdflB779y5YRBcV6Z6rBMLIrO4=";
-        pin-sha256="Wd8xe/qfTwq3ylFNd3IpaqLHZbh2ZNCLluVzmeNkcpw="; pin-sha256="WoiWRyIOVNa9ihaBciRSC7XHjliYS9VwUGOIud4PB18=";
-        pin-sha256="cAajgxHlj7GTSEIzIYIQxmEloOSoJq7VOaxWHfv72QM="; pin-sha256="dolnbtzEBnELx/9lOEQ22e6OZO/QNb6VSSX2XHA3E7A=";
-        pin-sha256="i7WTqTvh0OioIruIfFR4kMPnBqrS2rdiVPl/s2uC/CY="; pin-sha256="iduNzFNKpwYZ3se/XV+hXcbUonlLw09QPa6AYUwpu4M=";
-        pin-sha256="lnsM2T/O9/J84sJFdnrpsFp3awZJ+ZZbYpCWhGloaHI="; pin-sha256="r/mIkG3eEpVdm+u/ko/cwxzOMo1bk4TyHIlByibiA5E=";
-        pin-sha256="uUwZgwDOxcBXrQcntwu+kYFpkiVkOaezL0WYEZ3anJc="; includeSubdomains;
-        report-uri="http://csp.yahoo.com/beacon/csp?src=yahoocom-hpkp-report-only"
+      Date:
+      - Fri, 20 Sep 2019 20:17:57 GMT
+      Server:
+      - Apache/2.4.41 (Ubuntu)
+      X-Content-Type-Options:
+      - nosniff
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Cache:
+      - Miss from cloudfront
+      Via:
+      - 1.1 1645a9d28193126ae7c151e9fce40ee9.cloudfront.net (CloudFront)
+      X-Amz-Cf-Pop:
+      - DFW3-C1
+      X-Amz-Cf-Id:
+      - absmW_tZkHRoYKc7igTkxBpgS3E2cWXdpzb47yNFlYA1ee3o_KQgGg==
     body:
-      encoding: ASCII-8BIT
+      encoding: UTF-8
       string: '{"photos":{"page":1,"pages":0,"perpage":100,"total":"0","photo":[]},"stat":"ok"}'
     http_version: 
-  recorded_at: Thu, 28 Jun 2018 00:41:02 GMT
+  recorded_at: Fri, 20 Sep 2019 20:17:57 GMT
 - request:
     method: post
     uri: https://api.flickr.com/services/rest/
@@ -456,11 +324,11 @@ http_interactions:
       Accept:
       - "*/*"
       User-Agent:
-      - FlickRaw/0.9.9
+      - FlickRaw/0.9.10
       Authorization:
       - OAuth realm="https://api.flickr.com/services/rest/", oauth_consumer_key="10a9d6b7d1494c7ae615db24e02ea28b",
-        oauth_nonce="zhNLX4cxApNfLz1iNdbcn4uZHpk0yElxzj5tgmUaUWE%3D", oauth_signature="47652ab918e0f91f%26",
-        oauth_signature_method="PLAINTEXT", oauth_timestamp="1530146462", oauth_token="",
+        oauth_nonce="nE4Zb13JFf%2FoQF0VG2WrJ82KXmAjAAvjQYFSKyE6zCo%3D", oauth_signature="47652ab918e0f91f%26",
+        oauth_signature_method="PLAINTEXT", oauth_timestamp="1569010677", oauth_token="",
         oauth_version="1.0"
       Content-Type:
       - application/x-www-form-urlencoded
@@ -469,88 +337,62 @@ http_interactions:
       code: 200
       message: OK
     headers:
-      Date:
-      - Thu, 28 Jun 2018 00:41:02 GMT
       Content-Type:
       - application/json
-      Content-Length:
-      - '638'
-      P3p:
-      - policyref="https://policies.yahoo.com/w3c/p3p.xml", CP="CAO DSP COR CUR ADM
-        DEV TAI PSA PSD IVAi IVDi CONi TELo OTPi OUR DELi SAMi OTRi UNRi PUBi IND
-        PHY ONL UNI PUR FIN COM NAV INT DEM CNT STA POL HEA PRE LOC GOV"
-      X-Content-Type-Options:
-      - nosniff
-      Cache-Control:
-      - private
-      X-Served-By:
-      - www-bm014.flickr.bf1.yahoo.com
-      X-Frame-Options:
-      - SAMEORIGIN
-      Vary:
-      - Accept-Encoding
-      Age:
-      - '0'
-      Via:
-      - http/1.1 fts119.flickr.bf1.yahoo.com (ApacheTrafficServer [cMsSf ]), http/1.1
-        e20.ycpi.ata.yahoo.com (ApacheTrafficServer [cMsSf ])
-      Server:
-      - ATS
+      Transfer-Encoding:
+      - chunked
       Connection:
       - keep-alive
-      Strict-Transport-Security:
-      - max-age=15552000
-      Expect-Ct:
-      - max-age=31536000, report-uri="http://csp.yahoo.com/beacon/csp?src=yahoocom-expect-ct-report-only"
-      Public-Key-Pins-Report-Only:
-      - max-age=2592000; pin-sha256="2fRAUXyxl4A1/XHrKNBmc8bTkzA7y4FB/GLJuNAzCqY=";
-        pin-sha256="2oALgLKofTmeZvoZ1y/fSZg7R9jPMix8eVA6DH4o/q8="; pin-sha256="Gtk3r1evlBrs0hG3fm3VoM19daHexDWP//OCmeeMr5M=";
-        pin-sha256="I/Lt/z7ekCWanjD0Cvj5EqXls2lOaThEA0H2Bg4BT/o="; pin-sha256="JbQbUG5JMJUoI6brnx0x3vZF6jilxsapbXGVfjhN8Fg=";
-        pin-sha256="SVqWumuteCQHvVIaALrOZXuzVVVeS7f4FGxxu6V+es4="; pin-sha256="UZJDjsNp1+4M5x9cbbdflB779y5YRBcV6Z6rBMLIrO4=";
-        pin-sha256="Wd8xe/qfTwq3ylFNd3IpaqLHZbh2ZNCLluVzmeNkcpw="; pin-sha256="WoiWRyIOVNa9ihaBciRSC7XHjliYS9VwUGOIud4PB18=";
-        pin-sha256="cAajgxHlj7GTSEIzIYIQxmEloOSoJq7VOaxWHfv72QM="; pin-sha256="dolnbtzEBnELx/9lOEQ22e6OZO/QNb6VSSX2XHA3E7A=";
-        pin-sha256="i7WTqTvh0OioIruIfFR4kMPnBqrS2rdiVPl/s2uC/CY="; pin-sha256="iduNzFNKpwYZ3se/XV+hXcbUonlLw09QPa6AYUwpu4M=";
-        pin-sha256="lnsM2T/O9/J84sJFdnrpsFp3awZJ+ZZbYpCWhGloaHI="; pin-sha256="r/mIkG3eEpVdm+u/ko/cwxzOMo1bk4TyHIlByibiA5E=";
-        pin-sha256="uUwZgwDOxcBXrQcntwu+kYFpkiVkOaezL0WYEZ3anJc="; includeSubdomains;
-        report-uri="http://csp.yahoo.com/beacon/csp?src=yahoocom-hpkp-report-only"
+      Vary:
+      - Accept-Encoding
+      Date:
+      - Fri, 20 Sep 2019 20:17:58 GMT
+      Server:
+      - Apache/2.4.41 (Ubuntu)
+      X-Content-Type-Options:
+      - nosniff
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Cache:
+      - Miss from cloudfront
+      Via:
+      - 1.1 865d9f90680da51a3f9eabb044537fdc.cloudfront.net (CloudFront)
+      X-Amz-Cf-Pop:
+      - DFW3-C1
+      X-Amz-Cf-Id:
+      - cUSfU0-5_iX9nDGQ2nV8kAqOZBdF5pv0pMbd49xN4but4Y-4MCi7Gw==
     body:
       encoding: ASCII-8BIT
-      string: '{"photos":{"page":1,"pages":1,"perpage":100,"total":"15","photo":[{"id":"5617558250","owner":"61727647@N03","secret":"0084a815c7","server":"5262","farm":6,"title":"Loango
-        National Park. GabonTravel (1)","ispublic":1,"isfriend":0,"isfamily":0},{"id":"5616971345","owner":"61727647@N03","secret":"61f5262700","server":"5182","farm":6,"title":"Colonial
-        Heritage in Lambaren\u00e9 4h from Libreville. Gabon-Travel","ispublic":1,"isfriend":0,"isfamily":0},{"id":"5616970525","owner":"61727647@N03","secret":"3fd62926f5","server":"5187","farm":6,"title":"Pongara
-        National Park. Gabon-Travel (2)","ispublic":1,"isfriend":0,"isfamily":0},{"id":"5617556106","owner":"61727647@N03","secret":"8bf25b9fc9","server":"5110","farm":6,"title":"Pongara
-        National Park. Gabon-Travel","ispublic":1,"isfriend":0,"isfamily":0},{"id":"5616969533","owner":"61727647@N03","secret":"a2a9ddf79d","server":"5101","farm":6,"title":"Bwiti
-        Ritual in a Bantu Village near Ombou\u00e9. Gabon-Travel (20)","ispublic":1,"isfriend":0,"isfamily":0},{"id":"5617555010","owner":"61727647@N03","secret":"57c1922b75","server":"5149","farm":6,"title":"Willy
-        from Middle-Africa in a Bwiti Ritual in a Bantu Village near Ombou\u00e9.
-        Gabon-Travel","ispublic":1,"isfriend":0,"isfamily":0},{"id":"5617554646","owner":"61727647@N03","secret":"69c3dd238d","server":"5142","farm":6,"title":"Bwiti
-        Ritual in a Bantu Village near Ombou\u00e9. Gabon-Travel (16)","ispublic":1,"isfriend":0,"isfamily":0},{"id":"5616968689","owner":"61727647@N03","secret":"f59f1aee63","server":"5182","farm":6,"title":"Bwiti
-        Ritual in a Bantu Village near Ombou\u00e9. Gabon-Travel (15)","ispublic":1,"isfriend":0,"isfamily":0},{"id":"5616968493","owner":"61727647@N03","secret":"82ce828375","server":"5261","farm":6,"title":"Bwiti
-        Ritual in a Bantu Village near Ombou\u00e9. Gabon-Travel (14)","ispublic":1,"isfriend":0,"isfamily":0},{"id":"5617553666","owner":"61727647@N03","secret":"c2fdc8e591","server":"5023","farm":6,"title":"Bwiti
-        Ritual in a Bantu Village near Ombou\u00e9. Gabon-Travel (10)","ispublic":1,"isfriend":0,"isfamily":0},{"id":"5616967681","owner":"61727647@N03","secret":"9464436c1b","server":"5228","farm":6,"title":"Bwiti
-        Ritual in a Bantu Village near Ombou\u00e9. Gabon-Travel (9)","ispublic":1,"isfriend":0,"isfamily":0},{"id":"5617553394","owner":"61727647@N03","secret":"72384f57b1","server":"5186","farm":6,"title":"Bwiti
-        Ritual in a Bantu Village near Ombou\u00e9. Gabon-Travel (8)","ispublic":1,"isfriend":0,"isfamily":0},{"id":"5616967097","owner":"61727647@N03","secret":"2a04af1310","server":"5225","farm":6,"title":"Bwiti
-        Ritual in a Bantu Village near Ombou\u00e9. Gabon-Travel (6)","ispublic":1,"isfriend":0,"isfamily":0},{"id":"5616966761","owner":"61727647@N03","secret":"e1f12f8e46","server":"5187","farm":6,"title":"Bwiti
-        Ritual in a Bantu Village near Ombou\u00e9. Gabon-Travel (4)","ispublic":1,"isfriend":0,"isfamily":0},{"id":"5617551502","owner":"61727647@N03","secret":"9aa745db7c","server":"5181","farm":6,"title":"Loango
-        National Park from the sky. Gabon-Travel","ispublic":1,"isfriend":0,"isfamily":0}]},"stat":"ok"}'
+      string: '{"photos":{"page":1,"pages":1,"perpage":100,"total":"10","photo":[{"id":"5617558600","owner":"61727647@N03","secret":"3c5dcd49a1","server":"5227","farm":6,"title":"Loango
+        National Park. GabonTravel (3)","ispublic":1,"isfriend":0,"isfamily":0},{"id":"5617558496","owner":"61727647@N03","secret":"e5dfc574fd","server":"5026","farm":6,"title":"Loango
+        National Park. GabonTravel (2)","ispublic":1,"isfriend":0,"isfamily":0},{"id":"5616971345","owner":"61727647@N03","secret":"61f5262700","server":"5182","farm":6,"title":"Colonial
+        Heritage in Lambaren\u00e9 4h from Libreville. Gabon-Travel","ispublic":1,"isfriend":0,"isfamily":0},{"id":"5617557084","owner":"61727647@N03","secret":"088a2ae78b","server":"5106","farm":6,"title":"Colonial
+        Church in Lambaren\u00e9. Gabon-Travel","ispublic":1,"isfriend":0,"isfamily":0},{"id":"5617555822","owner":"61727647@N03","secret":"3e548b88a9","server":"5265","farm":6,"title":"Bwiti
+        Ritual in a Bantu Village near Ombou\u00e9. Gabon-Travel (22)","ispublic":1,"isfriend":0,"isfamily":0},{"id":"5616968689","owner":"61727647@N03","secret":"f59f1aee63","server":"5182","farm":6,"title":"Bwiti
+        Ritual in a Bantu Village near Ombou\u00e9. Gabon-Travel (15)","ispublic":1,"isfriend":0,"isfamily":0},{"id":"5617554124","owner":"61727647@N03","secret":"85637aed33","server":"5184","farm":6,"title":"Bwiti
+        Ritual in a Bantu Village near Ombou\u00e9. Gabon-Travel (13)","ispublic":1,"isfriend":0,"isfamily":0},{"id":"5617553914","owner":"61727647@N03","secret":"4a1ebd082e","server":"5143","farm":6,"title":"Bwiti
+        Ritual in a Bantu Village near Ombou\u00e9. Gabon-Travel (12)","ispublic":1,"isfriend":0,"isfamily":0},{"id":"5617551502","owner":"61727647@N03","secret":"9aa745db7c","server":"5181","farm":6,"title":"Loango
+        National Park from the sky. Gabon-Travel","ispublic":1,"isfriend":0,"isfamily":0},{"id":"5616970525","owner":"61727647@N03","secret":"3fd62926f5","server":"5187","farm":6,"title":"Pongara
+        National Park. Gabon-Travel (2)","ispublic":1,"isfriend":0,"isfamily":0}]},"stat":"ok"}'
     http_version: 
-  recorded_at: Thu, 28 Jun 2018 00:41:02 GMT
+  recorded_at: Fri, 20 Sep 2019 20:17:58 GMT
 - request:
     method: post
     uri: https://api.flickr.com/services/rest/
     body:
       encoding: US-ASCII
-      string: photo_id=5617558250&secret=0084a815c7&method=flickr.photos.getInfo&format=json&nojsoncallback=1
+      string: photo_id=5617558496&secret=e5dfc574fd&method=flickr.photos.getInfo&format=json&nojsoncallback=1
     headers:
       Accept-Encoding:
       - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
       Accept:
       - "*/*"
       User-Agent:
-      - FlickRaw/0.9.9
+      - FlickRaw/0.9.10
       Authorization:
       - OAuth realm="https://api.flickr.com/services/rest/", oauth_consumer_key="10a9d6b7d1494c7ae615db24e02ea28b",
-        oauth_nonce="ZQNu%2B08tiKRDLOWXzythcUyZHT7GohmL2vb70WvO2Ag%3D", oauth_signature="47652ab918e0f91f%26",
-        oauth_signature_method="PLAINTEXT", oauth_timestamp="1530146462", oauth_token="",
+        oauth_nonce="xj%2F%2FdQOpKVt8Sf9dI0tn1sm6K6iHdnJcwQ5cE2Bq43I%3D", oauth_signature="47652ab918e0f91f%26",
+        oauth_signature_method="PLAINTEXT", oauth_timestamp="1569010678", oauth_token="",
         oauth_version="1.0"
       Content-Type:
       - application/x-www-form-urlencoded
@@ -559,79 +401,59 @@ http_interactions:
       code: 200
       message: OK
     headers:
-      Date:
-      - Thu, 28 Jun 2018 00:41:03 GMT
       Content-Type:
       - application/json
-      Content-Length:
-      - '712'
-      P3p:
-      - policyref="https://policies.yahoo.com/w3c/p3p.xml", CP="CAO DSP COR CUR ADM
-        DEV TAI PSA PSD IVAi IVDi CONi TELo OTPi OUR DELi SAMi OTRi UNRi PUBi IND
-        PHY ONL UNI PUR FIN COM NAV INT DEM CNT STA POL HEA PRE LOC GOV"
-      X-Content-Type-Options:
-      - nosniff
-      Cache-Control:
-      - private
-      X-Served-By:
-      - www298.flickr.bf1.yahoo.com
-      X-Frame-Options:
-      - SAMEORIGIN
-      Vary:
-      - Accept-Encoding
-      Age:
-      - '0'
-      Via:
-      - http/1.1 fts115.flickr.bf1.yahoo.com (ApacheTrafficServer [cMsSf ]), http/1.1
-        e18.ycpi.ata.yahoo.com (ApacheTrafficServer [cMsSf ])
-      Server:
-      - ATS
+      Transfer-Encoding:
+      - chunked
       Connection:
       - keep-alive
-      Strict-Transport-Security:
-      - max-age=15552000
-      Expect-Ct:
-      - max-age=31536000, report-uri="http://csp.yahoo.com/beacon/csp?src=yahoocom-expect-ct-report-only"
-      Public-Key-Pins-Report-Only:
-      - max-age=2592000; pin-sha256="2fRAUXyxl4A1/XHrKNBmc8bTkzA7y4FB/GLJuNAzCqY=";
-        pin-sha256="2oALgLKofTmeZvoZ1y/fSZg7R9jPMix8eVA6DH4o/q8="; pin-sha256="Gtk3r1evlBrs0hG3fm3VoM19daHexDWP//OCmeeMr5M=";
-        pin-sha256="I/Lt/z7ekCWanjD0Cvj5EqXls2lOaThEA0H2Bg4BT/o="; pin-sha256="JbQbUG5JMJUoI6brnx0x3vZF6jilxsapbXGVfjhN8Fg=";
-        pin-sha256="SVqWumuteCQHvVIaALrOZXuzVVVeS7f4FGxxu6V+es4="; pin-sha256="UZJDjsNp1+4M5x9cbbdflB779y5YRBcV6Z6rBMLIrO4=";
-        pin-sha256="Wd8xe/qfTwq3ylFNd3IpaqLHZbh2ZNCLluVzmeNkcpw="; pin-sha256="WoiWRyIOVNa9ihaBciRSC7XHjliYS9VwUGOIud4PB18=";
-        pin-sha256="cAajgxHlj7GTSEIzIYIQxmEloOSoJq7VOaxWHfv72QM="; pin-sha256="dolnbtzEBnELx/9lOEQ22e6OZO/QNb6VSSX2XHA3E7A=";
-        pin-sha256="i7WTqTvh0OioIruIfFR4kMPnBqrS2rdiVPl/s2uC/CY="; pin-sha256="iduNzFNKpwYZ3se/XV+hXcbUonlLw09QPa6AYUwpu4M=";
-        pin-sha256="lnsM2T/O9/J84sJFdnrpsFp3awZJ+ZZbYpCWhGloaHI="; pin-sha256="r/mIkG3eEpVdm+u/ko/cwxzOMo1bk4TyHIlByibiA5E=";
-        pin-sha256="uUwZgwDOxcBXrQcntwu+kYFpkiVkOaezL0WYEZ3anJc="; includeSubdomains;
-        report-uri="http://csp.yahoo.com/beacon/csp?src=yahoocom-hpkp-report-only"
+      Vary:
+      - Accept-Encoding
+      Date:
+      - Fri, 20 Sep 2019 20:17:59 GMT
+      Server:
+      - Apache/2.4.41 (Ubuntu)
+      X-Content-Type-Options:
+      - nosniff
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Cache:
+      - Miss from cloudfront
+      Via:
+      - 1.1 6ae49474aa1916eb1ac27165cea228f4.cloudfront.net (CloudFront)
+      X-Amz-Cf-Pop:
+      - DFW3-C1
+      X-Amz-Cf-Id:
+      - AXea3X1LWptPwm77y6faPF-jhw8fP6Xmapk1h7_18UkzIsJDqbnJLA==
     body:
       encoding: ASCII-8BIT
-      string: '{"photo":{"id":"5617558250","secret":"0084a815c7","server":"5262","farm":6,"dateuploaded":"1302729845","isfavorite":0,"license":"0","safety_level":"0","rotation":0,"originalsecret":"dc32eef9d3","originalformat":"jpg","owner":{"nsid":"61727647@N03","username":"Middle
+      string: '{"photo":{"id":"5617558496","secret":"e5dfc574fd","server":"5026","farm":6,"dateuploaded":"1302729850","isfavorite":0,"license":"0","safety_level":"0","rotation":0,"originalsecret":"6b762e39cb","originalformat":"jpg","owner":{"nsid":"61727647@N03","username":"Middle
         Africa","realname":"","location":"","iconserver":"6011","iconfarm":7,"path_alias":null},"title":{"_content":"Loango
-        National Park. GabonTravel (1)"},"description":{"_content":"<a href=\"http:\/\/www.middle-africa.com\/travel-agency-gabon\"
-        rel=\"nofollow\">Gabon Travel<\/a>"},"visibility":{"ispublic":1,"isfriend":0,"isfamily":0},"dates":{"posted":"1302729845","taken":"2009-04-07
-        17:27:21","takengranularity":"0","takenunknown":0,"lastupdate":"1305355165"},"views":"417","editability":{"cancomment":0,"canaddmeta":0},"publiceditability":{"cancomment":1,"canaddmeta":0},"usage":{"candownload":1,"canblog":0,"canprint":0,"canshare":0},"comments":{"_content":"0"},"notes":{"note":[]},"people":{"haspeople":0},"tags":{"tag":[{"id":"61704593-5617558250-158365","author":"61727647@N03","authorname":"Middle
-        Africa","raw":"gabon","_content":"gabon","machine_tag":0},{"id":"61704593-5617558250-69374510","author":"61727647@N03","authorname":"Middle
-        Africa","raw":"gabon travel","_content":"gabontravel","machine_tag":0},{"id":"61704593-5617558250-55","author":"61727647@N03","authorname":"Middle
-        Africa","raw":"africa","_content":"africa","machine_tag":0}]},"urls":{"url":[{"type":"photopage","_content":"https:\/\/www.flickr.com\/photos\/61727647@N03\/5617558250\/"}]},"media":"photo"},"stat":"ok"}'
+        National Park. GabonTravel (2)"},"description":{"_content":"<a href=\"http:\/\/www.middle-africa.com\/travel-agency-gabon\"
+        rel=\"noreferrer nofollow\">Gabon Travel<\/a>"},"visibility":{"ispublic":1,"isfriend":0,"isfamily":0},"dates":{"posted":"1302729850","taken":"2009-04-07
+        18:39:12","takengranularity":"0","takenunknown":0,"lastupdate":"1525932524"},"views":"411","editability":{"cancomment":0,"canaddmeta":0},"publiceditability":{"cancomment":1,"canaddmeta":0},"usage":{"candownload":1,"canblog":0,"canprint":0,"canshare":0},"comments":{"_content":"0"},"notes":{"note":[]},"people":{"haspeople":0},"tags":{"tag":[{"id":"61704593-5617558496-158365","author":"61727647@N03","authorname":"Middle
+        Africa","raw":"gabon","_content":"gabon","machine_tag":0},{"id":"61704593-5617558496-69374510","author":"61727647@N03","authorname":"Middle
+        Africa","raw":"gabon travel","_content":"gabontravel","machine_tag":0},{"id":"61704593-5617558496-55","author":"61727647@N03","authorname":"Middle
+        Africa","raw":"africa","_content":"africa","machine_tag":0}]},"urls":{"url":[{"type":"photopage","_content":"https:\/\/www.flickr.com\/photos\/61727647@N03\/5617558496\/"}]},"media":"photo"},"stat":"ok"}'
     http_version: 
-  recorded_at: Thu, 28 Jun 2018 00:41:03 GMT
+  recorded_at: Fri, 20 Sep 2019 20:17:59 GMT
 - request:
     method: post
     uri: https://api.flickr.com/services/rest/
     body:
       encoding: US-ASCII
-      string: photo_id=5616969533&secret=a2a9ddf79d&method=flickr.photos.getInfo&format=json&nojsoncallback=1
+      string: photo_id=5616971345&secret=61f5262700&method=flickr.photos.getInfo&format=json&nojsoncallback=1
     headers:
       Accept-Encoding:
       - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
       Accept:
       - "*/*"
       User-Agent:
-      - FlickRaw/0.9.9
+      - FlickRaw/0.9.10
       Authorization:
       - OAuth realm="https://api.flickr.com/services/rest/", oauth_consumer_key="10a9d6b7d1494c7ae615db24e02ea28b",
-        oauth_nonce="6QImRQktbq8DUzkyM1DQ1I87cBK08Lm0Ug7XGtKqasc%3D", oauth_signature="47652ab918e0f91f%26",
-        oauth_signature_method="PLAINTEXT", oauth_timestamp="1530146463", oauth_token="",
+        oauth_nonce="4YJsVTR6mkJUyBX9je%2FdqtivLUBFfsbVOVFhB9l4PRA%3D", oauth_signature="47652ab918e0f91f%26",
+        oauth_signature_method="PLAINTEXT", oauth_timestamp="1569010679", oauth_token="",
         oauth_version="1.0"
       Content-Type:
       - application/x-www-form-urlencoded
@@ -640,147 +462,108 @@ http_interactions:
       code: 200
       message: OK
     headers:
-      Date:
-      - Thu, 28 Jun 2018 00:41:04 GMT
       Content-Type:
       - application/json
-      Content-Length:
-      - '734'
-      P3p:
-      - policyref="https://policies.yahoo.com/w3c/p3p.xml", CP="CAO DSP COR CUR ADM
-        DEV TAI PSA PSD IVAi IVDi CONi TELo OTPi OUR DELi SAMi OTRi UNRi PUBi IND
-        PHY ONL UNI PUR FIN COM NAV INT DEM CNT STA POL HEA PRE LOC GOV"
-      X-Content-Type-Options:
-      - nosniff
-      Cache-Control:
-      - private
-      X-Served-By:
-      - www300.flickr.bf1.yahoo.com
-      X-Frame-Options:
-      - SAMEORIGIN
-      Vary:
-      - Accept-Encoding
-      Age:
-      - '0'
-      Via:
-      - http/1.1 fts112.flickr.bf1.yahoo.com (ApacheTrafficServer [cMsSf ]), http/1.1
-        e24.ycpi.ata.yahoo.com (ApacheTrafficServer [cMsSf ])
-      Server:
-      - ATS
+      Transfer-Encoding:
+      - chunked
       Connection:
       - keep-alive
-      Strict-Transport-Security:
-      - max-age=15552000
-      Expect-Ct:
-      - max-age=31536000, report-uri="http://csp.yahoo.com/beacon/csp?src=yahoocom-expect-ct-report-only"
-      Public-Key-Pins-Report-Only:
-      - max-age=2592000; pin-sha256="2fRAUXyxl4A1/XHrKNBmc8bTkzA7y4FB/GLJuNAzCqY=";
-        pin-sha256="2oALgLKofTmeZvoZ1y/fSZg7R9jPMix8eVA6DH4o/q8="; pin-sha256="Gtk3r1evlBrs0hG3fm3VoM19daHexDWP//OCmeeMr5M=";
-        pin-sha256="I/Lt/z7ekCWanjD0Cvj5EqXls2lOaThEA0H2Bg4BT/o="; pin-sha256="JbQbUG5JMJUoI6brnx0x3vZF6jilxsapbXGVfjhN8Fg=";
-        pin-sha256="SVqWumuteCQHvVIaALrOZXuzVVVeS7f4FGxxu6V+es4="; pin-sha256="UZJDjsNp1+4M5x9cbbdflB779y5YRBcV6Z6rBMLIrO4=";
-        pin-sha256="Wd8xe/qfTwq3ylFNd3IpaqLHZbh2ZNCLluVzmeNkcpw="; pin-sha256="WoiWRyIOVNa9ihaBciRSC7XHjliYS9VwUGOIud4PB18=";
-        pin-sha256="cAajgxHlj7GTSEIzIYIQxmEloOSoJq7VOaxWHfv72QM="; pin-sha256="dolnbtzEBnELx/9lOEQ22e6OZO/QNb6VSSX2XHA3E7A=";
-        pin-sha256="i7WTqTvh0OioIruIfFR4kMPnBqrS2rdiVPl/s2uC/CY="; pin-sha256="iduNzFNKpwYZ3se/XV+hXcbUonlLw09QPa6AYUwpu4M=";
-        pin-sha256="lnsM2T/O9/J84sJFdnrpsFp3awZJ+ZZbYpCWhGloaHI="; pin-sha256="r/mIkG3eEpVdm+u/ko/cwxzOMo1bk4TyHIlByibiA5E=";
-        pin-sha256="uUwZgwDOxcBXrQcntwu+kYFpkiVkOaezL0WYEZ3anJc="; includeSubdomains;
-        report-uri="http://csp.yahoo.com/beacon/csp?src=yahoocom-hpkp-report-only"
+      Vary:
+      - Accept-Encoding
+      Date:
+      - Fri, 20 Sep 2019 20:18:01 GMT
+      Server:
+      - Apache/2.4.41 (Ubuntu)
+      X-Content-Type-Options:
+      - nosniff
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Cache:
+      - Miss from cloudfront
+      Via:
+      - 1.1 5c58021efde9831dc4a4b288db2f5256.cloudfront.net (CloudFront)
+      X-Amz-Cf-Pop:
+      - DFW3-C1
+      X-Amz-Cf-Id:
+      - 0KfavuCG9UShoXZUB_gVpR2BnbbiklEz3mcMok8N041slaHAvvSfZA==
     body:
       encoding: ASCII-8BIT
-      string: '{"photo":{"id":"5616969533","secret":"a2a9ddf79d","server":"5101","farm":6,"dateuploaded":"1302729782","isfavorite":0,"license":"0","safety_level":"0","rotation":0,"originalsecret":"0c8ae128eb","originalformat":"jpg","owner":{"nsid":"61727647@N03","username":"Middle
+      string: '{"photo":{"id":"5616971345","secret":"61f5262700","server":"5182","farm":6,"dateuploaded":"1302729824","isfavorite":0,"license":"0","safety_level":"0","rotation":0,"originalsecret":"3ba5ab56b4","originalformat":"jpg","owner":{"nsid":"61727647@N03","username":"Middle
+        Africa","realname":"","location":"","iconserver":"6011","iconfarm":7,"path_alias":null},"title":{"_content":"Colonial
+        Heritage in Lambaren\u00e9 4h from Libreville. Gabon-Travel"},"description":{"_content":"<a
+        href=\"http:\/\/www.middle-africa.com\/travel-agency-gabon\" rel=\"noreferrer
+        nofollow\">Gabon Travel<\/a>"},"visibility":{"ispublic":1,"isfriend":0,"isfamily":0},"dates":{"posted":"1302729824","taken":"2009-02-19
+        13:49:28","takengranularity":"0","takenunknown":0,"lastupdate":"1305355165"},"views":"452","editability":{"cancomment":0,"canaddmeta":0},"publiceditability":{"cancomment":1,"canaddmeta":0},"usage":{"candownload":1,"canblog":0,"canprint":0,"canshare":0},"comments":{"_content":"0"},"notes":{"note":[]},"people":{"haspeople":0},"tags":{"tag":[{"id":"61704593-5616971345-158365","author":"61727647@N03","authorname":"Middle
+        Africa","raw":"gabon","_content":"gabon","machine_tag":0},{"id":"61704593-5616971345-69374510","author":"61727647@N03","authorname":"Middle
+        Africa","raw":"gabon travel","_content":"gabontravel","machine_tag":0},{"id":"61704593-5616971345-55","author":"61727647@N03","authorname":"Middle
+        Africa","raw":"africa","_content":"africa","machine_tag":0}]},"urls":{"url":[{"type":"photopage","_content":"https:\/\/www.flickr.com\/photos\/61727647@N03\/5616971345\/"}]},"media":"photo"},"stat":"ok"}'
+    http_version: 
+  recorded_at: Fri, 20 Sep 2019 20:18:01 GMT
+- request:
+    method: post
+    uri: https://api.flickr.com/services/rest/
+    body:
+      encoding: US-ASCII
+      string: photo_id=5617553914&secret=4a1ebd082e&method=flickr.photos.getInfo&format=json&nojsoncallback=1
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - FlickRaw/0.9.10
+      Authorization:
+      - OAuth realm="https://api.flickr.com/services/rest/", oauth_consumer_key="10a9d6b7d1494c7ae615db24e02ea28b",
+        oauth_nonce="UenWUyPrhGOacCNQclYFD6uA0eH3R48w%2FTfZ7iJFHw0%3D", oauth_signature="47652ab918e0f91f%26",
+        oauth_signature_method="PLAINTEXT", oauth_timestamp="1569010681", oauth_token="",
+        oauth_version="1.0"
+      Content-Type:
+      - application/x-www-form-urlencoded
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Type:
+      - application/json
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Vary:
+      - Accept-Encoding
+      Date:
+      - Fri, 20 Sep 2019 20:18:02 GMT
+      Server:
+      - Apache/2.4.41 (Ubuntu)
+      X-Content-Type-Options:
+      - nosniff
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Cache:
+      - Miss from cloudfront
+      Via:
+      - 1.1 45e805c2921c20a6ad79fde63a1d5edd.cloudfront.net (CloudFront)
+      X-Amz-Cf-Pop:
+      - DFW3-C1
+      X-Amz-Cf-Id:
+      - t0MxbX1_lK8UipLW9beWSionDpiQ1RrjLUnV-z5s8CDU9ICUL7K-UA==
+    body:
+      encoding: ASCII-8BIT
+      string: '{"photo":{"id":"5617553914","secret":"4a1ebd082e","server":"5143","farm":6,"dateuploaded":"1302729750","isfavorite":0,"license":"0","safety_level":"0","rotation":0,"originalsecret":"9a5aa2787e","originalformat":"jpg","owner":{"nsid":"61727647@N03","username":"Middle
         Africa","realname":"","location":"","iconserver":"6011","iconfarm":7,"path_alias":null},"title":{"_content":"Bwiti
-        Ritual in a Bantu Village near Ombou\u00e9. Gabon-Travel (20)"},"description":{"_content":"<a
-        href=\"http:\/\/www.middle-africa.com\/travel-agency-gabon\" rel=\"nofollow\">Gabon
-        Travel<\/a>"},"visibility":{"ispublic":1,"isfriend":0,"isfamily":0},"dates":{"posted":"1302729782","taken":"2009-02-15
-        06:44:34","takengranularity":"0","takenunknown":0,"lastupdate":"1305355165"},"views":"659","editability":{"cancomment":0,"canaddmeta":0},"publiceditability":{"cancomment":1,"canaddmeta":0},"usage":{"candownload":1,"canblog":0,"canprint":0,"canshare":0},"comments":{"_content":"0"},"notes":{"note":[]},"people":{"haspeople":0},"tags":{"tag":[{"id":"61704593-5616969533-158365","author":"61727647@N03","authorname":"Middle
-        Africa","raw":"gabon","_content":"gabon","machine_tag":0},{"id":"61704593-5616969533-69374510","author":"61727647@N03","authorname":"Middle
-        Africa","raw":"gabon travel","_content":"gabontravel","machine_tag":0},{"id":"61704593-5616969533-55","author":"61727647@N03","authorname":"Middle
-        Africa","raw":"africa","_content":"africa","machine_tag":0}]},"urls":{"url":[{"type":"photopage","_content":"https:\/\/www.flickr.com\/photos\/61727647@N03\/5616969533\/"}]},"media":"photo"},"stat":"ok"}'
+        Ritual in a Bantu Village near Ombou\u00e9. Gabon-Travel (12)"},"description":{"_content":"<a
+        href=\"http:\/\/www.middle-africa.com\/travel-agency-gabon\" rel=\"noreferrer
+        nofollow\">Gabon Travel<\/a>"},"visibility":{"ispublic":1,"isfriend":0,"isfamily":0},"dates":{"posted":"1302729750","taken":"2009-02-15
+        06:08:25","takengranularity":"0","takenunknown":0,"lastupdate":"1305355165"},"views":"615","editability":{"cancomment":0,"canaddmeta":0},"publiceditability":{"cancomment":1,"canaddmeta":0},"usage":{"candownload":1,"canblog":0,"canprint":0,"canshare":0},"comments":{"_content":"0"},"notes":{"note":[]},"people":{"haspeople":0},"tags":{"tag":[{"id":"61704593-5617553914-158365","author":"61727647@N03","authorname":"Middle
+        Africa","raw":"gabon","_content":"gabon","machine_tag":0},{"id":"61704593-5617553914-69374510","author":"61727647@N03","authorname":"Middle
+        Africa","raw":"gabon travel","_content":"gabontravel","machine_tag":0},{"id":"61704593-5617553914-55","author":"61727647@N03","authorname":"Middle
+        Africa","raw":"africa","_content":"africa","machine_tag":0}]},"urls":{"url":[{"type":"photopage","_content":"https:\/\/www.flickr.com\/photos\/61727647@N03\/5617553914\/"}]},"media":"photo"},"stat":"ok"}'
     http_version: 
-  recorded_at: Thu, 28 Jun 2018 00:41:04 GMT
-- request:
-    method: post
-    uri: https://api.flickr.com/services/rest/
-    body:
-      encoding: US-ASCII
-      string: photo_id=5617556106&secret=8bf25b9fc9&method=flickr.photos.getInfo&format=json&nojsoncallback=1
-    headers:
-      Accept-Encoding:
-      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
-      Accept:
-      - "*/*"
-      User-Agent:
-      - FlickRaw/0.9.9
-      Authorization:
-      - OAuth realm="https://api.flickr.com/services/rest/", oauth_consumer_key="10a9d6b7d1494c7ae615db24e02ea28b",
-        oauth_nonce="uMDLlOFAjKPKZynAbhOYOvFCQacFU1tDSgj2dNPawYY%3D", oauth_signature="47652ab918e0f91f%26",
-        oauth_signature_method="PLAINTEXT", oauth_timestamp="1530146464", oauth_token="",
-        oauth_version="1.0"
-      Content-Type:
-      - application/x-www-form-urlencoded
-  response:
-    status:
-      code: 200
-      message: OK
-    headers:
-      Date:
-      - Thu, 28 Jun 2018 00:41:05 GMT
-      Content-Type:
-      - application/json
-      Content-Length:
-      - '706'
-      P3p:
-      - policyref="https://policies.yahoo.com/w3c/p3p.xml", CP="CAO DSP COR CUR ADM
-        DEV TAI PSA PSD IVAi IVDi CONi TELo OTPi OUR DELi SAMi OTRi UNRi PUBi IND
-        PHY ONL UNI PUR FIN COM NAV INT DEM CNT STA POL HEA PRE LOC GOV"
-      X-Content-Type-Options:
-      - nosniff
-      Cache-Control:
-      - private
-      X-Served-By:
-      - www297.flickr.bf1.yahoo.com
-      X-Frame-Options:
-      - SAMEORIGIN
-      Vary:
-      - Accept-Encoding
-      Age:
-      - '2'
-      Via:
-      - http/1.1 fts102.flickr.bf1.yahoo.com (ApacheTrafficServer [cMsSf ]), http/1.1
-        e22.ycpi.ata.yahoo.com (ApacheTrafficServer [cMsSf ])
-      Server:
-      - ATS
-      Connection:
-      - keep-alive
-      Strict-Transport-Security:
-      - max-age=15552000
-      Expect-Ct:
-      - max-age=31536000, report-uri="http://csp.yahoo.com/beacon/csp?src=yahoocom-expect-ct-report-only"
-      Public-Key-Pins-Report-Only:
-      - max-age=2592000; pin-sha256="2fRAUXyxl4A1/XHrKNBmc8bTkzA7y4FB/GLJuNAzCqY=";
-        pin-sha256="2oALgLKofTmeZvoZ1y/fSZg7R9jPMix8eVA6DH4o/q8="; pin-sha256="Gtk3r1evlBrs0hG3fm3VoM19daHexDWP//OCmeeMr5M=";
-        pin-sha256="I/Lt/z7ekCWanjD0Cvj5EqXls2lOaThEA0H2Bg4BT/o="; pin-sha256="JbQbUG5JMJUoI6brnx0x3vZF6jilxsapbXGVfjhN8Fg=";
-        pin-sha256="SVqWumuteCQHvVIaALrOZXuzVVVeS7f4FGxxu6V+es4="; pin-sha256="UZJDjsNp1+4M5x9cbbdflB779y5YRBcV6Z6rBMLIrO4=";
-        pin-sha256="Wd8xe/qfTwq3ylFNd3IpaqLHZbh2ZNCLluVzmeNkcpw="; pin-sha256="WoiWRyIOVNa9ihaBciRSC7XHjliYS9VwUGOIud4PB18=";
-        pin-sha256="cAajgxHlj7GTSEIzIYIQxmEloOSoJq7VOaxWHfv72QM="; pin-sha256="dolnbtzEBnELx/9lOEQ22e6OZO/QNb6VSSX2XHA3E7A=";
-        pin-sha256="i7WTqTvh0OioIruIfFR4kMPnBqrS2rdiVPl/s2uC/CY="; pin-sha256="iduNzFNKpwYZ3se/XV+hXcbUonlLw09QPa6AYUwpu4M=";
-        pin-sha256="lnsM2T/O9/J84sJFdnrpsFp3awZJ+ZZbYpCWhGloaHI="; pin-sha256="r/mIkG3eEpVdm+u/ko/cwxzOMo1bk4TyHIlByibiA5E=";
-        pin-sha256="uUwZgwDOxcBXrQcntwu+kYFpkiVkOaezL0WYEZ3anJc="; includeSubdomains;
-        report-uri="http://csp.yahoo.com/beacon/csp?src=yahoocom-hpkp-report-only"
-    body:
-      encoding: ASCII-8BIT
-      string: '{"photo":{"id":"5617556106","secret":"8bf25b9fc9","server":"5110","farm":6,"dateuploaded":"1302729798","isfavorite":0,"license":"0","safety_level":"0","rotation":0,"originalsecret":"3ff393219b","originalformat":"jpg","owner":{"nsid":"61727647@N03","username":"Middle
-        Africa","realname":"","location":"","iconserver":"6011","iconfarm":7,"path_alias":null},"title":{"_content":"Pongara
-        National Park. Gabon-Travel"},"description":{"_content":"<a href=\"http:\/\/www.middle-africa.com\/travel-agency-gabon\"
-        rel=\"nofollow\">Gabon Travel<\/a>"},"visibility":{"ispublic":1,"isfriend":0,"isfamily":0},"dates":{"posted":"1302729798","taken":"2009-02-16
-        12:58:34","takengranularity":"0","takenunknown":0,"lastupdate":"1305355165"},"views":"445","editability":{"cancomment":0,"canaddmeta":0},"publiceditability":{"cancomment":1,"canaddmeta":0},"usage":{"candownload":1,"canblog":0,"canprint":0,"canshare":0},"comments":{"_content":"0"},"notes":{"note":[]},"people":{"haspeople":0},"tags":{"tag":[{"id":"61704593-5617556106-158365","author":"61727647@N03","authorname":"Middle
-        Africa","raw":"gabon","_content":"gabon","machine_tag":0},{"id":"61704593-5617556106-69374510","author":"61727647@N03","authorname":"Middle
-        Africa","raw":"gabon travel","_content":"gabontravel","machine_tag":0},{"id":"61704593-5617556106-55","author":"61727647@N03","authorname":"Middle
-        Africa","raw":"africa","_content":"africa","machine_tag":0}]},"urls":{"url":[{"type":"photopage","_content":"https:\/\/www.flickr.com\/photos\/61727647@N03\/5617556106\/"}]},"media":"photo"},"stat":"ok"}'
-    http_version: 
-  recorded_at: Thu, 28 Jun 2018 00:41:05 GMT
+  recorded_at: Fri, 20 Sep 2019 20:18:02 GMT
 - request:
     method: get
-    uri: https://en.wikipedia.org/w/api.php?action=query&explaintext=&format=json&inprop=url&prop=info%7Crevisions%7Clinks%7Cextlinks%7Cimages%7Ccategories%7Ccoordinates%7Ctemplates%7Cextracts%7Cpageimages&rvprop=content&titles=Mekambo,%20Gabon
+    uri: https://en.wikipedia.org/w/api.php?action=query&explaintext=&format=json&inprop=url&lllimit=500&pithumbsize=200&prop=info%7Crevisions%7Clinks%7Cextlinks%7Cimages%7Ccategories%7Ccoordinates%7Ctemplates%7Cextracts%7Cpageimages%7Clanglinks&rvprop=content&titles=Mekambo,%20Gabon
     body:
       encoding: US-ASCII
       string: ''
@@ -797,7 +580,7 @@ http_interactions:
       message: OK
     headers:
       Date:
-      - Thu, 28 Jun 2018 00:41:05 GMT
+      - Fri, 20 Sep 2019 20:18:02 GMT
       Content-Type:
       - application/json; charset=utf-8
       Content-Length:
@@ -805,16 +588,14 @@ http_interactions:
       Connection:
       - keep-alive
       Server:
-      - mw1229.eqiad.wmnet
+      - mw1317.eqiad.wmnet
       X-Powered-By:
       - HHVM/3.18.6-dev
       P3p:
-      - CP="This is not a P3P policy! See https://en.wikipedia.org/wiki/Special:CentralAutoLogin/P3P
-        for more info."
+      - CP="See https://en.wikipedia.org/wiki/Special:CentralAutoLogin/P3P for more
+        info."
       Cache-Control:
       - private, must-revalidate, max-age=0
-      Vary:
-      - Accept-Encoding,Treat-as-Untrusted,X-Forwarded-Proto,Cookie,Authorization
       Content-Disposition:
       - inline; filename=api-result.json
       X-Content-Type-Options:
@@ -822,35 +603,37 @@ http_interactions:
       X-Frame-Options:
       - SAMEORIGIN
       Backend-Timing:
-      - D=25757 t=1530146465425996
+      - D=37264 t=1569010682552228
+      Vary:
+      - Accept-Encoding,Treat-as-Untrusted,X-Forwarded-Proto,Cookie,Authorization,X-Seven
       X-Varnish:
-      - 538765355, 510085435
-      Via:
-      - 1.1 varnish (Varnish/5.1), 1.1 varnish (Varnish/5.1)
+      - 871348916, 956217047, 769266591
       Accept-Ranges:
       - bytes
       Age:
       - '0'
       X-Cache:
-      - cp1054 pass, cp1052 pass
+      - cp1089 pass, cp2013 pass, cp2016 pass
       X-Cache-Status:
       - pass
+      Server-Timing:
+      - cache;desc="pass"
       Strict-Transport-Security:
       - max-age=106384710; includeSubDomains; preload
       Set-Cookie:
-      - GeoIP=US:KY:Louisville:38.25:-85.75:v4; Path=/; secure; Domain=.wikipedia.org
-      - WMF-Last-Access-Global=28-Jun-2018;Path=/;Domain=.wikipedia.org;HttpOnly;secure;Expires=Mon,
-        30 Jul 2018 00:00:00 GMT
-      - WMF-Last-Access=28-Jun-2018;Path=/;HttpOnly;secure;Expires=Mon, 30 Jul 2018
-        00:00:00 GMT
+      - GeoIP=US:TX:Plano:33.03:-96.68:v4; Path=/; secure; Domain=.wikipedia.org
+      - WMF-Last-Access-Global=20-Sep-2019;Path=/;Domain=.wikipedia.org;HttpOnly;secure;Expires=Tue,
+        22 Oct 2019 12:00:00 GMT
+      - WMF-Last-Access=20-Sep-2019;Path=/;HttpOnly;secure;Expires=Tue, 22 Oct 2019
+        12:00:00 GMT
       X-Analytics:
       - ns=-1;special=Badtitle;https=1;nocookies=1
       X-Client-Ip:
-      - 104.222.154.13
+      - 198.147.23.211
     body:
       encoding: ASCII-8BIT
       string: '{"batchcomplete":"","query":{"pages":{"-1":{"ns":0,"title":"Mekambo,
         Gabon","missing":"","contentmodel":"wikitext","pagelanguage":"en","pagelanguagehtmlcode":"en","pagelanguagedir":"ltr","fullurl":"https://en.wikipedia.org/wiki/Mekambo,_Gabon","editurl":"https://en.wikipedia.org/w/index.php?title=Mekambo,_Gabon&action=edit","canonicalurl":"https://en.wikipedia.org/wiki/Mekambo,_Gabon"}}}}'
     http_version: 
-  recorded_at: Thu, 28 Jun 2018 00:41:05 GMT
-recorded_with: VCR 3.0.3
+  recorded_at: Fri, 20 Sep 2019 20:18:02 GMT
+recorded_with: VCR 5.0.0

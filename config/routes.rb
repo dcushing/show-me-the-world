@@ -1,20 +1,9 @@
 Rails.application.routes.draw do
-
-  get 'errors/not_found'
-  get 'errors/internal_server_error'
-
-  scope "/:locale" do
-    resources :static_pages, only: [:show]
-  end
-  
-  root 'places#index'  
-  get 'about' => 'static_pages#about'
-  get 'show' => 'places#show'
-  
-  # for the pretty error pages
-  match "/404", :to => 'errors#not_found', :via => :all
-  match "/500", :to => 'errors#internal_server_error', :via => :all
-  
+  # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
+  root 'places#index'
+  get '/about', to: 'static_pages#about'
+  get '/404', to: 'errors#not_found'
+  get '/500', to: 'errors#internal_status_error'
   resources :places, only: [:index, :show]
-  
+
 end
