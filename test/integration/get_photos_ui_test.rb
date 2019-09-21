@@ -19,6 +19,7 @@ class GetPhotosUiTest < ActionDispatch::IntegrationTest
     VCR.use_cassette("dummy photos") do
       get place_path(@mekambo)
       assert_response :success
+      assert_select "img"
     end
   end
   

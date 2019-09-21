@@ -7,17 +7,11 @@ Show Me The World is a site designed to suggest places for you to visit. It has 
 <h3>Why did you make it?</h3>
 I built this so that I could dig deeper into some Rails/programming things that I didn't have a deep understanding of, but I also built it because I love to travel and I'm always looking for new suggestions of places to visit.
 
-<h3>I have a question/Your site is awesome and here's why/Your site sucks and here's why/Your site is broken and here's why</h3>
-I would love any and all feedback I can get! <%= link_to "Here's a google form you can use to provide feedback.", "https://goo.gl/forms/UIp3AMygIv7O5CT42", target: "_blank" %> You don't have to give me a name or an email, but if you do, it allows me to contact you about your comments. And if you're reporting an error, please give me as much information as possible about what you were doing with the site to get that error.
-
-<h3>What are your next plans for this?</h3>
-I need to improve the basic design, and a huge task is to provide a basic Italian translation of this site so that I can learn about internationalization (i18n). I'm also toying with attempting to use <%= link_to "Cordova", "http://cordova.apache.org/", target: "_blank" %> to create iOS and Android apps for no other reason than so that I can learn how to do that.
-
 <h3>Where can I see the code for the app?</h3>
 Check it out on GitHub here: <%= link_to "https://github.com/dcushing/show-me-the-world", "https://github.com/dcushing/show-me-the-world", target: "_blank" %>
 
 <h3>What is this app built on?</h3>
-It's built in Ruby on Rails 5. I used the <%= link_to "flickraw gem", "https://github.com/hanklords/flickraw", target: "_blank" %> to access the Flickr API, and the <%= link_to "wikipedia-client gem", "https://github.com/kenpratt/wikipedia-client", target: "_blank" %> to access the Wikipedia API. The front end is using the jQuery, CSS, and JavaScript that Rails 5 comes with. The fonts are "Open Sans" and "Love Ya Like A Sister," both of which are hosted on <%= link_to "Google Fonts", "https://fonts.google.com/", target: "_blank" %>.
+It's built in Ruby on Rails 5. I used the <%= link_to "flickraw gem", "https://github.com/hanklords/flickraw", target: "_blank" %> to access the Flickr API, and the <%= link_to "wikipedia-client gem", "https://github.com/kenpratt/wikipedia-client", target: "_blank" %> to access the Wikipedia API. The front end is using the jQuery, CSS, and JavaScript that Rails 5 comes with.
 
 <h3>How do you get the pictures from Flickr?</h3>
 I use the <%= link_to "flickraw gem", "https://github.com/hanklords/flickraw", target: "_blank" %> to access the Flickr API, and I created a service in my app called get_photos.rb. I use it to search Flickr for photos tagged with the city and country, and then I use random photos from that query to display on the page. I'm aware that it's not a perfect way to search for something, so I'm continuing to make small tweaks to the search query to see what I can do to improve it. (The panda and penguin pictures are not from Flickr. The panda is from <%= link_to "here on Wikimedia Commons", "https://commons.wikimedia.org/wiki/File:1_panda_trio_sichuan_china_2011.jpg", target: "_blank" %> and the penguin is from <%= link_to "here on Wikimedia Commons", "https://commons.wikimedia.org/wiki/File:African_penguin_near_Boulders_Beach.jpg", target: "_blank" %>.)
@@ -25,11 +19,9 @@ I use the <%= link_to "flickraw gem", "https://github.com/hanklords/flickraw", t
 <h3>Where did you get the list of cities?</h3>
 I got the list of cities from <%= link_to "here", "https://simplemaps.com/data/world-cities", target: "_blank" %> and the list of country data (region, language, and currency) <%= link_to "here", "https://raw.githubusercontent.com/datasets/country-codes/master/data/country-codes.csv", target: "_blank" %>. Both of these lists had more data than I needed, so I set up rake tasks to import only the information that I needed (for the places list, I only wanted cities with population of greater than 100,000). There's a nice tutorial on how to set up a rake task <%= link_to "here", "https://gorails.com/episodes/intro-to-importing-from-csv", target: "_blank" %>.
 
-<h3>Can I ask you more questions about the design of your site?</h3>
-Sure, <%= link_to "send me a comment here", "https://goo.gl/forms/UIp3AMygIv7O5CT42", target: "_blank" %>. I'm happy to talk about it.
 
 <h3>Just who are you, anyway?</h3>
-<p id="last-faq">My name's Danielle. I love to travel, drive myself crazy trying to program new features that I've never built before, and talk about grammar. You can find my website <%= link_to "here", "http://daniellecushing.net/", target: "_blank" %>, and I'm on <%= link_to "GitHub here", "https://github.com/dcushing", target: "_blank" %>.</p>
+<p id="last-faq">My name's Danielle. I love to travel, drive myself crazy trying to program new features that I've never built before, and talk about grammar. You can find me on <%= link_to "GitHub here", "https://github.com/dcushing", target: "_blank" %>.</p>
 
 
 

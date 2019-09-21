@@ -1,6 +1,5 @@
 # Postgres
 
-
 default: &default
   adapter: postgresql
   pool: 5
