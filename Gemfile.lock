@@ -85,7 +85,7 @@ GEM
       coffee-script-source
       execjs
     coffee-script-source (1.12.2)
-    concurrent-ruby (1.1.6)
+    concurrent-ruby (1.1.10)
     crack (0.4.3)
       safe_yaml (~> 1.0.0)
     crass (1.0.6)
@@ -100,8 +100,8 @@ GEM
     flickraw-cached (20120701)
       flickraw (>= 0.9)
     formatador (0.2.5)
-    globalid (0.4.2)
-      activesupport (>= 4.2.0)
+    globalid (1.0.1)
+      activesupport (>= 5.0)
     guard (2.13.0)
       formatador (>= 0.2.4)
       listen (>= 2.7, <= 4.0)
@@ -116,7 +116,7 @@ GEM
       guard-compat (~> 1.2)
       minitest (>= 3.0)
     hashdiff (1.0.1)
-    i18n (1.8.2)
+    i18n (1.12.0)
       concurrent-ruby (~> 1.0)
     jbuilder (2.10.0)
       activesupport (>= 5.0.0)
@@ -141,7 +141,7 @@ GEM
       rake
     mini_mime (1.0.2)
     mini_portile2 (2.8.0)
-    minitest (5.14.0)
+    minitest (5.17.0)
     minitest-reporters (1.1.14)
       ansi
       builder
@@ -228,7 +228,7 @@ GEM
     turbolinks (5.0.1)
       turbolinks-source (~> 5)
     turbolinks-source (5.2.0)
-    tzinfo (1.2.6)
+    tzinfo (1.2.10)
       thread_safe (~> 0.1)
     uglifier (3.2.0)
       execjs (>= 0.3.0, < 3)
@@ -252,7 +252,7 @@ GEM
     wikipedia-client (1.10.0)
     xpath (3.2.0)
       nokogiri (~> 1.8)
-    zeitwerk (2.3.0)
+    zeitwerk (2.6.6)
 
 PLATFORMS
   ruby
